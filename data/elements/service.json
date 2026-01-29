@@ -1,0 +1,709 @@
+{
+  "serviceOne": [
+    {
+      "sectionTitle": "Style One.",
+      "body": [
+        {
+          "title": "Best Coaching",
+          "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima error reiciendis.",
+          "img": "/images/icons/card-icon-1.png",
+          "bgOne": true,
+          "bgTwo": false,
+          "bgThree": false,
+          "bgFour": false
+        },
+        {
+          "title": "Convenient practice",
+          "desc": "Convenient practice dolor sit adipisicing elit. Minima error reiciendis.",
+          "img": "/images/icons/card-icon-2.png",
+          "bgTwo": true,
+          "bgOne": false,
+          "bgThree": false,
+          "bgFour": false
+        },
+        {
+          "title": "Video Lecture",
+          "desc": "Video Lecture sit, amet consectetur adipisicing elit. Minima error reiciendis..",
+          "img": "/images/icons/card-icon-3.png",
+          "bgThree": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgFour": false
+        },
+        {
+          "title": "Live Class",
+          "desc": "Live Class dolor sit, amet consectetur adipisicing elit. Minima error reiciendis.",
+          "img": "/images/icons/card-icon-4.png",
+          "bgFour": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgThree": false
+        }
+      ]
+    }
+  ],
+  "serviceTwo": [
+    {
+      "sectionTitle": "Style Two.",
+      "body": [
+        {
+          "title": "React",
+          "desc": "Lorem ipsum dolor sit, amet consectetur.",
+          "img": "/images/service/service-01.png"
+        },
+        {
+          "title": "English",
+          "desc": "Lorem ipsum dolor sit, amet consectetur.",
+          "img": "/images/service/service-02.png"
+        },
+        {
+          "title": "Education",
+          "desc": "Lorem ipsum dolor sit, amet consectetur.",
+          "img": "/images/service/service-03.png"
+        }
+      ]
+    }
+  ],
+  "serviceThree": [
+    {
+      "sectionTitle": "What You Gain with VidyaRishi?",
+      "body": [
+        {
+          "title": "Free Counselling",
+          "desc": "We offer free services because accurate information is a right for all.",
+          "dum" : "We offer free services because we believe everyone deserves accurate information.",
+          "img": "/images/vidya/08.png",
+          "bgTwo": true,
+          "bgOne": false,
+          "bgThree": false,
+          "bgFour": false
+        },
+        {
+          "title": "Right Guidence",
+          "desc": "Get career guidance from genuine education experts, not salespeople!",
+          "img": "/images/vidya/05.png",
+          "bgOne": true,
+          "bgTwo": false,
+          "bgThree": false,
+          "bgFour": false
+        },
+        {
+          "title": "Admission Support",
+          "desc": "Post-admission support to enhance and simplify your learning journey!",
+          "img": "/images/vidya/04.png",
+          "bgThree": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgFour": false
+        },
+        {
+          "title": "University Information",
+          "desc": "A verified list of universities with accreditations and reviews!",
+          "dum": "A fully verified university list with accreditations, student reviews, and placement details for your informed choice!",
+          "img": "/images/vidya/07.png",
+          "bgFour": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgThree": false
+        }
+      ]
+    }
+  ],
+  "serviceFour": [
+    {
+      "sectionTitle": "Style Four.",
+      "body": [
+        {
+          "title": "Chemistry",
+          "course": 5,
+          "img": "/images/shape/icon-01.png"
+        },
+        {
+          "title": "Accounting",
+          "course": 40,
+          "img": "/images/shape/icon-02.png"
+        },
+        {
+          "title": "Management",
+          "course": 60,
+          "img": "/images/shape/icon-03.png"
+        },
+        {
+          "title": "Art & Design",
+          "course": 20,
+          "img": "/images/shape/icon-04.png"
+        },
+        {
+          "title": "Biology",
+          "course": 20,
+          "img": "/images/shape/icon-05.png"
+        },
+        {
+          "title": "Marketing",
+          "course": 20,
+          "img": "/images/shape/icon-06.png"
+        },
+        {
+          "title": "Astrology",
+          "course": 25,
+          "img": "/images/shape/icon-07.png"
+        },
+        {
+          "title": "Engineering ",
+          "course": 10,
+          "img": "/images/shape/icon-08.png"
+        }
+      ]
+    }
+  ],
+  "serviceFive": [
+    {
+      "sectionTitle": "Vidya Rishi In Numbers",
+      "body": [
+        {
+          "title": "Your Apply",
+          "desc": "English Learning looking for random paragraphs, you've come to the right place. When a random.",
+          "img": "/images/icons/001-bulb.png"
+        },
+        {
+          "title": "We Connect",
+          "desc": "Javascript Learning looking for random paragraphs, you've come to the right place. When a random.",
+          "img": "/images/icons/002-hat.png"
+        },
+        {
+          "title": "You Get Ready",
+          "desc": "Angular Learning looking for random paragraphs, you've come to the right place. When a random.",
+          "img": "/images/icons/003-id-card.png"
+        },
+        {
+          "title": "Modern Skills",
+          "desc": "Php Learning looking for random paragraphs, you've come to the right place. When a random.",
+          "img": "/images/icons/004-pass.png"
+        }
+      ]
+    }
+  ],
+  "serviceSix": [
+    {
+      "sectionTitle": "What Inspires Us?",
+      "body": [
+        {
+          "title": "Our Philosophy",
+          "desc": "We believe in a learner-centric approach, where every student is given the tools, support, and guidance they need to achieve their personal and professional goals",
+          "img": "/images/shape/service-01.png",
+          "bgOne": true,
+          "bgTwo": false,
+          "bgThree": false,
+          "bgFour": false
+        },
+        {
+          "title": "Our Vision",
+          "desc": "To create a world where every individual has access to the skills, knowledge, and resources required to thrive in an ever-evolving career landscape",
+          "img": "/images/shape/service-04.png",
+          "bgTwo": true,
+          "bgOne": false,
+          "bgThree": false,
+          "bgFour": false
+        },
+        {
+          "title": "Our Mission",
+          "desc": "To make quality education accessible to all, empowering individuals to achieve their professional goals through expert-led, impactful learning",
+          "img": "/images/shape/service-03.png",
+          "bgThree": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgFour": false
+        },
+        {
+          "title": "Our Approach",
+          "desc": "Fusing innovation, technology, and industry expertise to deliver dynamic and engaging learning experiences that drive real-world success.",
+          "img": "/images/shape/service-02.png",
+          "bgFour": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgThree": false
+        }
+      ]
+    }
+  ],
+  "serviceSaven": [
+    {
+      "sectionTitle": "Style Seven.",
+      "title": "What Makes Us Stand Out?",
+      "desc": "Learn from Experts",
+      "body": [
+        {
+          "Numbers": "250+",
+          "title": "Industry Experts",
+          "desc": "Boost your learning with engaging live classes",
+          "img": "/images/shape/service-01.png",
+          "bgOne": true,
+          "bgTwo": false,
+          "bgThree": false,
+          "bgFour": false,
+          "bgFive": false
+        },
+        {
+          "Numbers": "150+",
+          "title": "Career Experts",
+          "desc": "Get advice on picking the right course",
+          "img": "/images/shape/service-04.png",
+          "bgTwo": true,
+          "bgOne": false,
+          "bgThree": false,
+          "bgFour": false,
+          "bgFive": false
+        },
+        {
+          "Numbers": "200+",
+          "title": "Industry Problems",
+          "desc": "Get job-ready with practical knowledge & real-world experience",
+          "img": "/images/shape/service-03.png",
+          "bgThree": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgFour": false,
+          "bgFive": false
+        },
+        {
+          "Numbers": "500+",
+          "title": "Courses",
+          "desc": "Match your goals with the right course",
+          "img": "/images/shape/service-02.png",
+          "bgFour": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgThree": false,
+          "bgFive": false
+        },
+        {
+          "Numbers": "100+",
+          "title": "Hiring Partners",
+          "desc": "Navigate your career path with personalized guidance.",
+          "img": "/images/shape/service-05.png",
+          "bgFive": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgThree": false,
+          "bgFour": false
+        }
+      ]
+    }
+  ],
+  "serviceEight": [
+    {
+      "sectionTitle": "Style Eight.",
+      "body": [
+        {
+          "title": "Chemistry",
+          "img": "/images/category/image/web-design.jpg"
+        },
+        {
+          "title": "Graphic Design",
+          "img": "/images/category/image/graphic-design.jpg"
+        },
+        {
+          "title": "Software",
+          "img": "/images/category/image/software.jpg"
+        },
+        {
+          "title": "Mobile App",
+          "img": "/images/category/image/mobile.jpg"
+        },
+        {
+          "title": "Finance",
+          "img": "/images/category/image/finance.jpg"
+        },
+        {
+          "title": "Art & Humanities",
+          "img": "/images/category/image/arts.jpg"
+        }
+      ]
+    }
+  ],
+  "serviceNine": [
+    {
+      "sectionTitle": "Style Nine.",
+      "body": [
+        {
+          "title": "Best Coaching",
+          "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima error reiciendis.",
+          "img": "/images/icons/card-icon-1.png",
+          "bgOne": true,
+          "bgTwo": false,
+          "bgThree": false,
+          "bgFour": false,
+          "list": [
+            {
+              "text": "570 Free Video",
+              "icon": "feather-youtube"
+            },
+            {
+              "text": "35 Subjects",
+              "icon": "feather-book"
+            },
+            {
+              "text": "Live Class",
+              "icon": "feather-video"
+            },
+            {
+              "text": "MCQ and CQ Bank",
+              "icon": "feather-info"
+            }
+          ]
+        },
+        {
+          "title": "Convenient practice",
+          "desc": "Convenient practice dolor sit adipisicing elit. Minima error reiciendis.",
+          "img": "/images/icons/card-icon-2.png",
+          "bgTwo": true,
+          "bgOne": false,
+          "bgThree": false,
+          "bgFour": false,
+          "list": [
+            {
+              "text": "370 Free Video",
+              "icon": "feather-youtube"
+            },
+            {
+              "text": "120 Subjects",
+              "icon": "feather-book"
+            },
+            {
+              "text": "Live Class",
+              "icon": "feather-video"
+            },
+            {
+              "text": "MCQ and CQ Bank",
+              "icon": "feather-info"
+            }
+          ]
+        },
+        {
+          "title": "Video Lecture",
+          "desc": "Video Lecture sit, amet consectetur adipisicing elit. Minima error reiciendis..",
+          "img": "/images/icons/card-icon-3.png",
+          "bgThree": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgFour": false,
+          "list": [
+            {
+              "text": "125 Free Video",
+              "icon": "feather-youtube"
+            },
+            {
+              "text": "12 Subjects",
+              "icon": "feather-book"
+            },
+            {
+              "text": "Live Class",
+              "icon": "feather-video"
+            },
+            {
+              "text": "MCQ and CQ Bank",
+              "icon": "feather-info"
+            }
+          ]
+        },
+        {
+          "title": "Live Class",
+          "desc": "Live Class dolor sit, amet consectetur adipisicing elit. Minima error reiciendis.",
+          "img": "/images/icons/card-icon-4.png",
+          "bgFour": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgThree": false,
+          "list": [
+            {
+              "text": "124 Free Video",
+              "icon": "feather-youtube"
+            },
+            {
+              "text": "56 Subjects",
+              "icon": "feather-book"
+            },
+            {
+              "text": "Live Class",
+              "icon": "feather-video"
+            },
+            {
+              "text": "MCQ and CQ Bank",
+              "icon": "feather-info"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serviceTen": [
+    {
+      "sectionTitle": "Style Ten.",
+      "body": [
+        {
+          "title": "BCS Exam",
+          "desc": "Lorem ipsum dolor sit, amet consectetur.",
+          "img": "/images/service/service-01.png",
+          "listLeft": [
+            {
+              "text": "125  Free Video",
+              "icon": "feather-youtube"
+            },
+            {
+              "text": "12 Subjects",
+              "icon": "feather-book"
+            }
+          ],
+          "listRight": [
+            {
+              "text": "Live Class",
+              "icon": "feather-video"
+            },
+            {
+              "text": "MCQ and CQ Bank",
+              "icon": "feather-info"
+            }
+          ]
+        },
+        {
+          "title": "Medical Exam",
+          "desc": "Lorem ipsum dolor sit, amet consectetur.",
+          "img": "/images/service/service-02.png",
+          "listLeft": [
+            {
+              "text": "785 Free Video",
+              "icon": "feather-youtube"
+            },
+            {
+              "text": "95 Subjects",
+              "icon": "feather-book"
+            }
+          ],
+          "listRight": [
+            {
+              "text": "Live Class",
+              "icon": "feather-video"
+            },
+            {
+              "text": "MCQ and CQ Bank",
+              "icon": "feather-info"
+            }
+          ]
+        },
+        {
+          "title": "University Admit Exam",
+          "desc": "Lorem ipsum dolor sit, amet consectetur.",
+          "img": "/images/service/service-03.png",
+          "listLeft": [
+            {
+              "text": "123 Free Video",
+              "icon": "feather-youtube"
+            },
+            {
+              "text": "85 Subjects",
+              "icon": "feather-book"
+            }
+          ],
+          "listRight": [
+            {
+              "text": "Live Class",
+              "icon": "feather-video"
+            },
+            {
+              "text": "MCQ and CQ Bank",
+              "icon": "feather-info"
+            }
+          ]
+        },
+        {
+          "title": "IELTS Exam",
+          "desc": "Lorem ipsum dolor sit, amet consectetur.",
+          "img": "/images/service/service-03.png",
+          "listLeft": [
+            {
+              "text": "150 Free Video",
+              "icon": "feather-youtube"
+            },
+            {
+              "text": "26 Subjects",
+              "icon": "feather-book"
+            }
+          ],
+          "listRight": [
+            {
+              "text": "Live Class",
+              "icon": "feather-video"
+            },
+            {
+              "text": "MCQ and CQ Bank",
+              "icon": "feather-info"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serviceEleven": [
+    {
+      "sectionTitle": "Style Eleven.",
+      "body": [
+        {
+          "title": "Infant",
+          "imgFront": "/images/flip/kindergarten-01-front.jpg",
+          "img": "/images/flip/kindergarten-01-back.jpg",
+          "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+          "bgOne": true,
+          "bgTwo": false,
+          "bgThree": false,
+          "bgFour": false,
+          "list": [
+            {
+              "text": "Health and Wellness",
+              "icon": "feather-heart"
+            },
+            {
+              "text": "Literacy and Language",
+              "icon": "feather-flag"
+            },
+            {
+              "text": "Social-Emotional Learning",
+              "icon": "feather-eye"
+            },
+            {
+              "text": "Visual and Creative Arts",
+              "icon": "feather-edit-2"
+            },
+            {
+              "text": "Thinking and Learning",
+              "icon": "feather-battery-charging"
+            }
+          ]
+        },
+        {
+          "title": "Toddler/Twos",
+          "imgFront": "/images/flip/kindergarten-02-front.jpg",
+          "img": "/images/flip/kindergarten-02-back.jpg",
+          "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+          "bgTwo": true,
+          "bgOne": false,
+          "bgThree": false,
+          "bgFour": false,
+          "list": [
+            {
+              "text": "Health and Wellness",
+              "icon": "feather-heart"
+            },
+            {
+              "text": "Literacy and Language",
+              "icon": "feather-flag"
+            },
+            {
+              "text": "Social-Emotional Learning",
+              "icon": "feather-eye"
+            },
+            {
+              "text": "Visual and Creative Arts",
+              "icon": "feather-edit-2"
+            },
+            {
+              "text": "Thinking and Learning",
+              "icon": "feather-battery-charging"
+            }
+          ]
+        },
+        {
+          "title": "Preschool",
+          "imgFront": "/images/flip/kindergarten-03-front.jpg",
+          "img": "/images/flip/kindergarten-03-back.jpg",
+          "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+          "bgThree": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgFour": false,
+          "list": [
+            {
+              "text": "Health and Wellness",
+              "icon": "feather-heart"
+            },
+            {
+              "text": "Literacy and Language",
+              "icon": "feather-flag"
+            },
+            {
+              "text": "Social-Emotional Learning",
+              "icon": "feather-eye"
+            },
+            {
+              "text": "Visual and Creative Arts",
+              "icon": "feather-edit-2"
+            },
+            {
+              "text": "Thinking and Learning",
+              "icon": "feather-battery-charging"
+            }
+          ]
+        },
+        {
+          "title": "Kindergarten Prep",
+          "imgFront": "/images/flip/kindergarten-04-front.jpg",
+          "img": "/images/flip/kindergarten-04-back.jpg",
+          "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+          "bgFour": true,
+          "bgOne": false,
+          "bgTwo": false,
+          "bgThree": false,
+          "list": [
+            {
+              "text": "Health and Wellness",
+              "icon": "feather-heart"
+            },
+            {
+              "text": "Literacy and Language",
+              "icon": "feather-flag"
+            },
+            {
+              "text": "Social-Emotional Learning",
+              "icon": "feather-eye"
+            },
+            {
+              "text": "Visual and Creative Arts",
+              "icon": "feather-edit-2"
+            },
+            {
+              "text": "Thinking and Learning",
+              "icon": "feather-battery-charging"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serviceTwelve": [
+    {
+      "sectionTitle": "Style Twelve.",
+      "body": [
+        {
+          "title": "Your Apply",
+          "desc": "English Learning looking for random paragraphs, you've come to the right place. When a random.",
+          "img": "/images/icons/001-bulb.png"
+        },
+        {
+          "title": "We Connect",
+          "desc": "Javascript Learning looking for random paragraphs, you've come to the right place. When a random.",
+          "img": "/images/icons/002-hat.png"
+        },
+        {
+          "title": "You Get Ready",
+          "desc": "Angular Learning looking for random paragraphs, you've come to the right place. When a random.",
+          "img": "/images/icons/003-id-card.png"
+        },
+        {
+          "title": "Completed",
+          "desc": "Php Learning looking for random paragraphs, you've come to the right place. When a random.",
+          "img": "/images/icons/004-pass.png"
+        }
+      ]
+    }
+  ]
+}
+

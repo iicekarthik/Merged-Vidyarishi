@@ -1,0 +1,28 @@
+{
+  "contactOne": [
+    {
+      "title": "Contact Phone Number",
+      "numOne": "+91 9619 535 535",
+      "numTwo": "",
+      "icon": "feather-phone",
+      "address": ""
+    },
+    {
+      "title": "Our Email Address",
+      "mailOne": "support@vidyarishi.com",
+      "mailTwo": "contact@vidyarishi.com",
+      "icon": "feather-mail",
+      "numOne": "",
+      "address": "",
+      "numTwo": ""
+    },
+    {
+      "title": "Our Location",
+      "address": "2/B-14, Vivina (Nadco Shopping Centre), Opp Railway Station,",
+      "address2" :"ANDHERI (WEST), Mumbai - 400 058.",
+      "icon": "feather-map-pin",
+      "numOne": "",
+      "numTwo": ""
+    }
+  ]
+}

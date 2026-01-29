@@ -1,0 +1,415 @@
+{
+  "accordion": [
+    {
+      "tag": "accordion",
+      "title": "Histudy Course student",
+      "subTitle": "can join with us.",
+      "imgOne": "/images/about/about-01.jpg",
+      "imgTwo": "/images/about/about-04.jpg",
+      "accordionBody": [
+        {
+          "collapse": "collapseOne",
+          "heading": "headingOne",
+          "expanded": true,
+          "collapsed": true,
+          "show": true,
+          "accordionTitle": "What is Histudy ? How does it work?",
+          "desc": "You can run Histudy easily. Any School, University, College can be use this histudy education template for their educational purpose. A university can be run their online leaning management system by histudy education template."
+        },
+        {
+          "collapse": "collapseTwo",
+          "heading": "headingTwo",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "How can I get the customer support?",
+          "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com."
+        },
+        {
+          "collapse": "collapseThree",
+          "heading": "headingThree",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "Can I get update regularly and For how long do I get updates?",
+          "desc": "Yes, We will get update the Histudy. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update."
+        },
+        {
+          "collapse": "collapseFour",
+          "heading": "headingFour",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "15 Things To Know About Education?",
+          "desc": "If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough, the next logical step is to find a random paragraph."
+        }
+      ]
+    }
+  ],
+
+  "AccordionTwo": [
+    {
+      "tag": "faq",
+      "title": "Have a Question with ",
+      "subTitle": " Histudy University?",
+      "strong": "Its an educational platform",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+      "imgOne": "/images/about/about-01.jpg",
+      "imgTwo": "/images/about/about-10.jpg",
+      "faqBody": [
+        {
+          "collapse": "collapseOne2",
+          "heading": "headingOne2",
+          "expanded": true,
+          "collapsed": true,
+          "show": true,
+          "accordionTitle": "What is Histudy ? How does it work?",
+          "desc": "You can run Histudy easily. Any School, University, College can be use this histudy education template for their educational purpose. A university can be run their online leaning management system by histudy education template."
+        },
+        {
+          "collapse": "collapseTwo2",
+          "heading": "headingTwo2",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "How can I get the customer support?",
+          "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com."
+        },
+        {
+          "collapse": "collapseThree2",
+          "heading": "headingThree2",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "Can I get update regularly and For how long do I get updates?",
+          "desc": "Yes, We will get update the Histudy. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update."
+        },
+        {
+          "collapse": "collapseFour2",
+          "heading": "headingFour2",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "15 Things To Know About Education?",
+          "desc": "If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough, the next logical step is to find a random paragraph."
+        }
+      ]
+    }
+  ],
+
+  "AccordionThree": [
+    {
+      "tag": "faq",
+      "title": "Have a Question with ",
+      "subTitle": " Histudy University?",
+      "strong": "Its an educational platform",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+      "faqBody": [
+        {
+          "collapse": "collapseOne3",
+          "heading": "headingOne3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "What is Histudy ? How does it work?",
+          "desc": "You can run Histudy easily. Any School, University, College can be use this histudy education template for their educational purpose. A university can be run their online leaning management system by histudy education template."
+        },
+        {
+          "collapse": "collapseTwo3",
+          "heading": "headingTwo3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "How can I get the customer support?",
+          "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com."
+        },
+        {
+          "collapse": "collapseThree3",
+          "heading": "headingThree3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "Can I get update regularly and For how long do I get updates?",
+          "desc": "Yes, We will get update the Histudy. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update."
+        },
+        {
+          "collapse": "collapseFour3",
+          "heading": "headingFour3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "15 Things To Know About Education?",
+          "desc": "If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough, the next logical step is to find a random paragraph."
+        }
+      ],
+      "faqBody2": [
+        {
+          "collapse": "collapseOne4",
+          "heading": "headingOne4",
+          "expanded": true,
+          "collapsed": true,
+          "show": true,
+          "accordionTitle": "What is Histudy ? How does it work?",
+          "desc": "You can run Histudy easily. Any School, University, College can be use this histudy education template for their educational purpose. A university can be run their online leaning management system by histudy education template."
+        },
+        {
+          "collapse": "collapseTwo4",
+          "heading": "headingTwo4",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "10 Brilliant Ways To Advertise Education",
+          "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com."
+        },
+        {
+          "collapse": "collapseThree4",
+          "heading": "headingThree4",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "7 Facts About Education That Will Blow",
+          "desc": "Yes, We will get update the Histudy. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update."
+        },
+        {
+          "collapse": "collapseFour4",
+          "heading": "headingFour4",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "15 Things To Know About Education?",
+          "desc": "If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough, the next logical step is to find a random paragraph."
+        }
+      ]
+    }
+  ],
+
+  "AccordionFour": [
+    {
+      "tag": "faq",
+      "title": "Have a Question with ",
+      "subTitle": " Histudy University?",
+      "strong": "Its an educational platform",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+      "imgOne": "/images/about/about-03.jpg",
+      "imgTwo": "/images/about/about-11.jpg",
+      "faqBody": [
+        {
+          "collapse": "collapseOne4",
+          "heading": "headingOne4",
+          "expanded": true,
+          "collapsed": true,
+          "show": true,
+          "accordionTitle": "What is Histudy ? How does it work?",
+          "desc": "You can run Histudy easily. Any School, University, College can be use this histudy education template for their educational purpose."
+        },
+        {
+          "collapse": "collapseTwo4",
+          "heading": "headingTwo4",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "How can I get the customer support?",
+          "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com."
+        },
+        {
+          "collapse": "collapseThree4",
+          "heading": "headingThree4",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "Can I get update regularly and For how long do I get updates?",
+          "desc": "Yes, We will get update the Histudy. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update."
+        },
+        {
+          "collapse": "collapseFour4",
+          "heading": "headingFour4",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "How can I run Histudy html template?",
+          "desc": "You can run Histudy easily. First You'll need to have node and npm on your machine. So Please open your command prompt then check your node."
+        }
+      ]
+    }
+  ],
+  
+  "course": [
+    {
+      "tag": "COURSE PRICING",
+      "title": "Tuition & Fees",
+      "img": "/images/about/about-07.png",
+      "courseBody": [
+        {
+          "collapse": "tutioncollapseOne",
+          "heading": "tutionheadingOne",
+          "expanded": true,
+          "collapsed": true,
+          "show": true,
+          "subTitle": "Master of Business Administration (MBA)",
+          "text": "Total Cost Breakdown 2024",
+          "cost": 500
+        },
+        {
+          "collapse": "tutioncollapseTwo",
+          "heading": "tutionheadingTwo",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "subTitle": "MSS in Economics",
+          "text": "Admission Eligibility Breakdown 2024",
+          "cost": 4589
+        },
+        {
+          "collapse": "tutioncollapseThe",
+          "heading": "tutionheadingThree",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "subTitle": "MS in Applied Physics & Electronics",
+          "text": "Admission Eligibility Breakdown 2024",
+          "cost": 1400
+        },
+        {
+          "collapse": "tutioncollapseFour",
+          "heading": "tutionheadingFour",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "subTitle": "Master of Laws (LL.M.)",
+          "text": "Total Cost Breakdown 2024",
+          "cost": 4589
+        },
+        {
+          "collapse": "tutioncollapseFive",
+          "heading": "tutionheadingFive",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "subTitle": "Master of Population, Reproductive Health",
+          "text": "Total Cost Breakdown 2024",
+          "cost": 5000
+        }
+      ]
+    }
+  ],
+
+
+  "FAQ": [
+    {
+      "tag": "faq",
+      "title": "Have a Question with ",
+      "subTitle": " Vidyarishi ?",
+      "strong": "Its an educational platform",
+      "description": ["Answer a few simple questions to discover the ideal online university for you available anytime, anywhere."],
+      "faqBody": [
+        {
+          "collapse": "collapseOne3",
+          "heading": "headingOne3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "How do I select the best course for my career?",
+          "desc": "To select the best course, consider your career goals, interests, and current skill set. Research various courses that align with your aspirations and explore their syllabi, reviews, and potential job opportunities after completion. Our platform offers tools to help you compare courses based on subjects, career paths, and university ratings, making it easier to make an informed decision."
+        },
+        {
+          "collapse": "collapseTwo3",
+          "heading": "headingTwo3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "How do I compare different universities?",
+          "desc": "You can compare universities using our comparison tool, which evaluates universities based on key factors such as student ratings, accreditation, course offerings, faculty, location, and costs. This will help you assess which universities best meet your educational and personal needs."
+        },
+        {
+          "collapse": "collapseThree3",
+          "heading": "headingThree3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "What are the prerequisites for enrolling in a course?",
+          "desc": "Each course may have its own set of prerequisites. Generally, these could include a certain level of prior education, specific qualifications, or foundational knowledge in the subject. You can find the prerequisites for each course listed on the course page, so be sure to check them before applying."
+        },
+        {
+          "collapse": "collapseFour3",
+          "heading": "headingFour3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "How do I contact the support team for assistance?",
+          "desc": "You can reach out to our support team via email, phone.",
+          "phone":"+91 9152 535 535",
+          "email":"support@vidyarishi.com"
+        },
+        {
+          "collapse": "collapseFive3",
+          "heading": "headingFive3",
+          "expanded": false,
+          "collapsed": false,
+          "show": false,
+          "accordionTitle": "What payment options are available for courses?",
+          "desc": "We offer several payment options, including credit/debit cards, bank transfers, and online payment platforms such as PayPal. You can choose the method most convenient for you during the checkout process. For installment plans or financial aid, please check the specific course or university details."
+        }
+      ]
+    }
+  ],
+
+  "PartnerFAQ": [
+      {
+        "tag": "faq",
+        "title": "Have Questions About",
+        "subTitle": " Becoming a Vidyarishi Partner?",
+        "strong": "We're here to guide you.",
+        "description": ["Explore answers to frequently asked questions and learn how you can grow with Vidyarishi by becoming an education consultant or business partner."],
+        "faqBody": [
+          {
+            "collapse": "collapseOne3",
+            "heading": "headingOne3",
+            "expanded": false,
+            "collapsed": false,
+            "show": false,
+            "accordionTitle": "What is the Vidyarishi Partner Program?",
+            "desc": "The Vidyarishi Partner Program is a unique opportunity for individuals, counselors, mentors, and education enthusiasts to become business partners and help students discover and enroll in top UGC-approved online universities. As a partner, you’ll receive complete access to our platform, training, and tools to start earning and growing your network."
+          },
+          {
+            "collapse": "collapseTwo3",
+            "heading": "headingTwo3",
+            "expanded": false,
+            "collapsed": false,
+            "show": false,
+            "accordionTitle": "Is there any investment or joining fee?",
+            "desc": "No. There is zero investment required to become a Vidyarishi partner. You can start your journey without any financial commitment and begin earning commissions and incentives right away."
+          },
+          {
+            "collapse": "collapseThree3",
+            "heading": "headingThree3",
+            "expanded": false,
+            "collapsed": false,
+            "show": false,
+            "accordionTitle": "How do I earn as a partner?",
+            "desc": "You earn commissions for every successful student enrollment made through your referral or counseling. The more you guide, the more you earn. There’s no limit to your income potential, and you can track everything through our partner dashboard."
+          },
+          {
+            "collapse": "collapseFour3",
+            "heading": "headingFour3",
+            "expanded": false,
+            "collapsed": false,
+            "show": false,
+            "accordionTitle": "Do I need prior experience in education to join?",
+            "desc": "Not at all. Whether you’re new to education counseling or have years of experience, the Vidyarishi team provides full training, marketing materials, and continuous support to help you succeed as a partner."
+          },
+          {
+            "collapse": "collapseFive3",
+            "heading": "headingFive3",
+            "expanded": false,
+            "collapsed": false,
+            "show": false,
+            "accordionTitle": "How do I get support or assistance?",
+            "desc": "Our dedicated partner support team is available to assist you 24×7. Whether it's technical help, product queries, or onboarding guidance—we’ve got you covered.",
+            "phone": "+91 9152 535 535",
+            "email": "support@vidyarishi.com"
+          }
+        ]
+      }
+  ]
+  
+}

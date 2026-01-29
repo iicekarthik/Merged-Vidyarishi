@@ -1,0 +1,147 @@
+{
+  "footerOne": [
+    {
+      "description": "VidyaRishi is committed to transforming education by making high-quality learning accessible to all. Through expert-led courses, advanced technology, and industry collaborations, we equip learners with the skills needed to excel in their careers. Our mission is to bridge the gap between knowledge and opportunity, empowering individuals to achieve professional success with confidence!",
+      "phone": "+91-9619 535 535",
+      "mail": "support@vidyarishi.com",
+      "address": "Andheri West, Mumbai",
+      "usefulLinks": [
+        
+        {
+          "text": "Compare University",
+          "link": "/compare-university"
+        },
+        {
+          "text": "Enquire Know",
+          "link": "/enquire-know"
+        },
+        {
+          "text": "University",
+          "link": "/university"
+        },
+        {
+          "text": "Courses",
+          "link": "/courses"
+        }    ,    {
+          "text": "Blog",
+          "link": "/blog"
+        },
+        {
+          "text": "FAQ",
+          "link": "/pages/faqs"
+        }
+      ],
+      "ourCompany": [
+        {
+          "text": "About Us",
+          "link": "/about"
+        },
+        {
+          "text": "Contact Us",
+          "link": "/contact"
+        },
+        {
+          "text": "Blog",
+          "link": "/blog"
+        },
+        {
+          "text": "Career",
+          "link": "/career"
+        },
+        {
+          "text": "Become Bussiness Associate",
+          "link": "/become-business-associate"
+        }
+      ],
+      "socialLink": [
+        {
+          "icon": "feather-facebook",
+          "link": "https://www.facebook.com/vidyarishiindia"
+        },
+        {
+          "icon": "feather-twitter",
+          "link": "https://www.twitter.com"
+        },
+        {
+          "icon": "feather-instagram",
+          "link": "https://www.instagram.com/vidyarishi_india"
+        },
+        {
+          "icon": "feather-linkedin",
+          "link": "https://in.linkedin.com/company/vidyarishi"
+        }
+      ]
+    }
+  ],
+  "footerTwo": [
+    {
+      "description": "We’re always in search for talented and motivated people.Don’t be shy introduce yourself!",
+      "descriptionTwo": "2000+ Our students are subscribe Around the World.Don’t be shy introduce yourself!",
+      "phone": "(406) 555-0120",
+      "mail": "admin@example.com",
+      "address": "North America, USA",
+      "usefulLinks": [
+        {
+          "text": "Marketplace",
+          "link": "/12-marketplace"
+        },
+        {
+          "text": "kindergarten",
+          "link": "/04-kindergarten"
+        },
+        {
+          "text": "University",
+          "link": "/13-university-classic"
+        },
+        {
+          "text": "Classic Lms",
+          "link": "/05-classic-lms"
+        },
+        {
+          "text": "FAQ",
+          "link": "/pages/faqs"
+        }
+      ],
+      "ourCompany": [
+        {
+          "text": "Contact Us",
+          "link": "/contact"
+        },
+        {
+          "text": "Become Teacher",
+          "link": "/become-a-teacher"
+        },
+        {
+          "text": "Blog",
+          "link": "/blog-list"
+        },
+        {
+          "text": "Instructor",
+          "link": "/elements/team"
+        },
+        {
+          "text": "Events",
+          "link": "/pages/event-list"
+        }
+      ],
+      "socialLink": [
+        {
+          "icon": "feather-facebook",
+          "link": "https://www.facebook.com/share/129JHwkhMHJ/"
+        },
+        {
+          "icon": "feather-twitter",
+          "link": "https://www.twitter.com"
+        },
+        {
+          "icon": "feather-instagram",
+          "link": "https://www.instagram.com/"
+        },
+        {
+          "icon": "feather-linkedin",
+          "link": "https://www.linkdin.com/"
+        }
+      ]
+    }
+  ]
+}

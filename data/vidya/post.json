@@ -1,0 +1,1730 @@
+[
+    {
+        "__v": {
+            "$numberInt": "0"
+        },
+        "_id": {
+            "$oid": "67ee670b7da1441e6913370c"
+        },
+        "_status": "published",
+        "content": {
+            "root": {
+                "children": [
+                    {
+                        "children": [],
+                        "direction": null,
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "mediaBlock",
+                            "id": "67efb837133ad0e0922e2184",
+                            "media": "67efb7c66819b012c8502341"
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Automobile Engineering is a specialized branch of engineering that deals with designing, manufacturing, and maintaining vehicles. With the rise in demand for electric vehicles, hybrid technology, and advanced transportation systems, pursuing a degree in Automobile Engineering has become a lucrative career choice. If you are looking for the top automobile engineering colleges in India, this guide will help you make an informed decision.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "tableOfContent",
+                            "content": [
+                                {
+                                    "id": "67ef8e271c6f24941bed0d97",
+                                    "item": {
+                                        "label": "a hello",
+                                        "link": "Why Choose Automobile Engineering?"
+                                    }
+                                },
+                                {
+                                    "id": "67ef90121c6f24941bed0d99",
+                                    "item": {
+                                        "label": "1 . content",
+                                        "link": "2. IIT Delhi – Indian Institute of Technology, Delhi"
+                                    }
+                                }
+                            ],
+                            "id": "67ef8e2513c6660a1437e6d1",
+                            "title": "Table of Content"
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Why Choose Automobile Engineering?",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h2",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Automobile Engineering offers diverse career opportunities in the automotive sector, including vehicle design, research & development, manufacturing, and testing. Graduates from the best automobile engineering colleges in India can work with top automobile brands such as Tata Motors, Mahindra & Mahindra, Maruti Suzuki, Hyundai, and international companies like BMW, Tesla, and Ford.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Eligibility Criteria for Automobile Engineering",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h2",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Before enrolling in one of the top automobile engineering colleges in India, students must meet the following eligibility criteria:",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "For Undergraduate Courses (B.Tech/B.E): Candidates must have completed 10+2 with Physics, Chemistry, and Mathematics (PCM) and qualify for entrance exams such as JEE Main, JEE Advanced, or state-level engineering entrance tests.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "For Postgraduate Courses (M.Tech/M.E): Candidates must have a Bachelor’s degree in Mechanical or Automobile Engineering and qualify for entrance exams like GATE.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Top Automobile Engineering Colleges in India",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h2",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Here is a list of the top automobile engineering colleges in India, offering high-quality education and excellent placement opportunities.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "1. IIT Madras – Indian Institute of Technology, Madras",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "IIT Madras is one of the most prestigious engineering institutions in India, offering cutting-edge research and development in automobile engineering. The institute collaborates with top automobile companies, ensuring excellent industry exposure.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee67de01466868d9f94e6a",
+                            "json": [
+                                {
+                                    "College Name": "IIT Madras",
+                                    "Course Offered": "B.Tech & M.Tech in Automobile Engineering",
+                                    "Entrance Exam": "JEE Advanced, GATE",
+                                    "Location": "Chennai, Tamil Nadu"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "2. IIT Delhi – Indian Institute of Technology, Delhi",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "IIT Delhi provides specialized courses in automotive engineering, focusing on sustainable vehicle technologies, electric mobility, and smart transportation solutions.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee680901466868d9f94e6b",
+                            "json": [
+                                {
+                                    "College Name": "IIT Delhi",
+                                    "Course Offered": "M.Tech in Automotive Engineering",
+                                    "Entrance Exam": "GATE",
+                                    "Location": "New Delhi"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "3. VIT Vellore – Vellore Institute of Technology",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "VIT Vellore has a strong curriculum in automobile engineering, with modern laboratories and research projects in electric vehicles and autonomous driving.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee681201466868d9f94e6c",
+                            "json": [
+                                {
+                                    "College Name": "VIT Vellore",
+                                    "Course Offered": "B.Tech in Automobile Engineering",
+                                    "Entrance Exam": "VITEEE",
+                                    "Location": "Vellore, Tamil Nadu"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "4. SRM Institute of Science and Technology, Chennai",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "SRM IST is known for its advanced automotive labs and collaboration with automobile industries, providing students with hands-on experience in vehicle design and manufacturing.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee684601466868d9f94e6d",
+                            "json": [
+                                {
+                                    "College Name": "SRM IST",
+                                    "Course Offered": "B.Tech in Automobile Engineering",
+                                    "Entrance Exam": "SRMJEEE",
+                                    "Location": "Chennai, Tamil Nadu"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "5. MIT Manipal – Manipal Institute of Technology",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "MIT Manipal offers a robust automobile engineering program with specialized courses in vehicle dynamics, alternative fuels, and hybrid technology.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee689201466868d9f94e6e",
+                            "json": [
+                                {
+                                    "College Name": "MIT Manipal",
+                                    "Course Offered": "B.Tech in Automobile Engineering",
+                                    "Entrance Exam": "MET",
+                                    "Location": "Manipal, Karnataka"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "6. PSG College of Technology, Coimbatore",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "PSG College of Technology is one of the best private engineering colleges in India, offering excellent research opportunities and industry training in automobile engineering.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee68af01466868d9f94e6f",
+                            "json": [
+                                {
+                                    "College Name": "PSG College of Technology",
+                                    "Course Offered": "B.E and M.E in Automobile Engineering",
+                                    "Entrance Exam": "TNEA",
+                                    "Location": "Coimbatore"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Best Government and Private Colleges for Automobile Engineering",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h2",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Government Colleges",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee68e801466868d9f94e70",
+                            "json": [
+                                {
+                                    "College Name": "IIT Madras",
+                                    "Entrance Exam": "JEE Advanced",
+                                    "Location": "Chennai"
+                                },
+                                {
+                                    "College Name": "IIT Delhi",
+                                    "Entrance Exam": "JEE Advanced",
+                                    "Location": "New Delhi"
+                                },
+                                {
+                                    "College Name": "COEP Pune",
+                                    "Entrance Exam": "MHT CET",
+                                    "Location": "Pune"
+                                },
+                                {
+                                    "College Name": "PSG College of Technology",
+                                    "Entrance Exam": "TNEA",
+                                    "Location": "Coimbatore"
+                                },
+                                {
+                                    "College Name": "NIT Warangal",
+                                    "Entrance Exam": "JEE Main",
+                                    "Location": "Warangal"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Private Colleges",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee68ff01466868d9f94e71",
+                            "json": [
+                                {
+                                    "College Name": "VIT Vellore",
+                                    "Entrance Exam": "VITEEE",
+                                    "Location": "Vellore"
+                                },
+                                {
+                                    "College Name": "SRM IST",
+                                    "Entrance Exam": "SRMJEEE",
+                                    "Location": "Chennai"
+                                },
+                                {
+                                    "College Name": "MIT Manipal",
+                                    "Entrance Exam": "MET",
+                                    "Location": "Manipal"
+                                },
+                                {
+                                    "College Name": "Amity University",
+                                    "Entrance Exam": "University Entrance",
+                                    "Location": "Noida"
+                                },
+                                {
+                                    "College Name": "Chandigarh University",
+                                    "Entrance Exam": "CUCET",
+                                    "Location": "Chandigarh"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Specializations in Automobile Engineering",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h2",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Many of the top automobile engineering colleges in India offer specialized courses in:",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Electric Vehicles and Hybrid Technology",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Vehicle Dynamics and Safety",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Automobile Design and Manufacturing",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Automotive Mechatronics",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Alternative Fuels and Sustainable Mobility",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Career Prospects and Salary",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h2",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Graduates from the top automobile engineering colleges in India can pursue careers in various sectors such as:",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Automobile Manufacturing – Working in companies like Tata Motors, Maruti Suzuki, Hyundai, and Ford.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Research & Development – Developing new vehicle technologies and innovations.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Automobile Design – Working with companies like Tesla, BMW, and Mercedes.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Government and Public Sector – Opportunities in organizations like ISRO and DRDO.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Average Salary of Automobile Engineers in India",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h3",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "jsonToTableBlock",
+                            "id": "67ee692501466868d9f94e72",
+                            "json": [
+                                {
+                                    "Average Salary (INR per annum)": "5 – 8 LPA",
+                                    "Job Role": "Design Engineer"
+                                },
+                                {
+                                    "Average Salary (INR per annum)": "6 – 10 LPA",
+                                    "Job Role": "R&D Engineer"
+                                },
+                                {
+                                    "Average Salary (INR per annum)": "4 – 7 LPA",
+                                    "Job Role": "Production Engineer"
+                                },
+                                {
+                                    "Average Salary (INR per annum)": "6 – 12 LPA",
+                                    "Job Role": "Automotive Software Engineer"
+                                }
+                            ]
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Frequently Asked Questions (FAQs)",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h2",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [],
+                        "direction": null,
+                        "format": "",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "dropBlock",
+                            "DropContent": "The duration of a B.Tech in Automobile Engineering is typically four years, while an M.Tech program takes two years to complete.",
+                            "DropHead": "1. What is the duration of an Automobile Engineering course?",
+                            "id": "67ee694801466868d9f94e73"
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "dropBlock",
+                            "DropContent": "Graduates can work in automobile manufacturing, R&D, design, sales, and government sectors.",
+                            "DropHead": "2. What are the job opportunities after Automobile Engineering?",
+                            "id": "67ee696401466868d9f94e74"
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "dropBlock",
+                            "DropContent": "IIT Madras, IIT Delhi, and VIT Vellore are among the top institutions for automobile engineering in India.",
+                            "DropHead": "3. Which is the best college for Automobile Engineering in India?",
+                            "id": "67ee697d01466868d9f94e75"
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "dropBlock",
+                            "DropContent": "Yes, with advancements in electric and autonomous vehicles, automobile engineering offers promising career prospects.",
+                            "DropHead": "4. Is automobile engineering a good career option?",
+                            "id": "67ee699401466868d9f94e76"
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "fields": {
+                            "blockName": "",
+                            "blockType": "dropBlock",
+                            "DropContent": "JEE Main, JEE Advanced, VITEEE, SRMJEEE, and GATE are some of the entrance exams required for admission.",
+                            "DropHead": "5. What entrance exams are required for admission to top automobile engineering colleges in India?",
+                            "id": "67ee69a801466868d9f94e77"
+                        },
+                        "format": "",
+                        "type": "block",
+                        "version": {
+                            "$numberInt": "2"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Conclusion",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "tag": "h2",
+                        "type": "heading",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "Choosing the right college is essential for a successful career in automobile engineering. The top automobile engineering colleges in India provide excellent academic programs, industry exposure, and placement opportunities. Whether you aspire to work in automobile design, manufacturing, or research, enrolling in one of the best automobile engineering colleges in India can help you achieve your goals.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    },
+                    {
+                        "children": [
+                            {
+                                "detail": {
+                                    "$numberInt": "0"
+                                },
+                                "format": {
+                                    "$numberInt": "0"
+                                },
+                                "mode": "normal",
+                                "style": "",
+                                "text": "If you’re passionate about cars and technology, a career in automobile engineering is a perfect choice. Research well, prepare for entrance exams, and select the college that aligns with your career aspirations.",
+                                "type": "text",
+                                "version": {
+                                    "$numberInt": "1"
+                                }
+                            }
+                        ],
+                        "direction": "ltr",
+                        "format": "start",
+                        "indent": {
+                            "$numberInt": "0"
+                        },
+                        "textFormat": {
+                            "$numberInt": "0"
+                        },
+                        "textStyle": "",
+                        "type": "paragraph",
+                        "version": {
+                            "$numberInt": "1"
+                        }
+                    }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": {
+                    "$numberInt": "0"
+                },
+                "type": "root",
+                "version": {
+                    "$numberInt": "1"
+                }
+            }
+        },
+        "createdAt": {
+            "$date": {
+                "$numberLong": "1743677195508"
+            }
+        },
+        "heroImage": {
+            "$oid": "67efb7c66819b012c8502341"
+        },
+        "meta": {},
+        "populatedAuthors": [],
+        "publishedAt": {
+            "$date": {
+                "$numberLong": "1743677904850"
+            }
+        },
+        "slug": "top-automobile-engineering-colleges-in-india-a-complete-guide",
+        "slugLock": true,
+        "title": "Top Automobile Engineering Colleges in India: A Complete Guide",
+        "updatedAt": {
+            "$date": {
+                "$numberLong": "1743763620485"
+            }
+        }
+    }
+]

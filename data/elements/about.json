@@ -1,0 +1,150 @@
+{
+  "aboutOne": [
+    {
+      "tag": "KNOW ABOUT US",
+      "title": "We are the Next-Gen ",
+      "subTitle": "Higher EdTech Platform",
+      "desc": "Vidyarishi (a program initiated by Rishikesh Education Services Pvt. Ltd.) transforms education by making high-quality learning accessible. With expert-led courses, advanced technology, and industry collaborations, we equip learners with essential skills to bridge the gap between knowledge and opportunity, empowering career success.",
+      "desc1": "Vidyarishi is committed to transforming education by making high-quality learning accessible to all. Through expert-led courses, advanced technology, and industry collaborations, we equip learners with the skills needed to excel in their careers. Our mission is to bridge the gap between knowledge and opportunity, empowering individuals to achieve professional success with confidence.",
+      "desc2": "Our mission is to make quality education accessible to all, breaking barriers and redefining professional growth. By blending innovation with a learner-centric approach, VidyaRishi ensures a transformative learning experience that prepares individuals for success in their careers and beyond.",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/about/about-07.jpg",
+          "class": "",
+          "width": 366,
+          "height": 490
+        },
+        {
+          "id": 2,
+          "image": "/images/about/about-09.jpg",
+          "class": "d-none d-xl-block",
+          "width": 308,
+          "height": 250
+        },
+        {
+          "id": 3,
+          "image": "/images/about/about-08.jpg",
+          "class": "d-none d-md-block",
+          "width": 405,
+          "height": 490
+        }
+      ],
+      "children": [
+        {
+          "title": "Our Purpose",
+          "icon": "feather-heart",
+          "isPrimary": false,
+          "info": "To empower individuals with transformative learning experiences that shape their future success, bridging the gap between knowledge and opportunity!"
+        },
+        {
+          "title": "Our Promise",
+          "icon": "feather-book",
+          "isPrimary": true,
+          "info": "To provide expert-led, industry-aligned education that equips learners with the practical skills needed to excel in the modern world!"
+        },
+        {
+          "title": "Our Focus",
+          "icon": "feather-monitor",
+          "isPrimary": false,
+          "info": "We focus on providing industry-relevant education, innovative teaching, and personalized learning to equip learners with the skills needed for career success."
+        }
+      ]
+    }
+  ],
+  "aboutTwo": [
+    {
+      "tag": "KNOW ABOUT US",
+      "title": "Know About Histudy",
+      "subTitle": " Learning Platform",
+      "desc": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+      "images": [
+        {
+          "id": 1,
+          "image": "/images/about/about-01.png",
+          "class": "",
+          "width": 400,
+          "height": 490
+        },
+        {
+          "id": 2,
+          "image": "/images/about/about-02.png",
+          "class": "d-none d-xl-block",
+          "width": 280,
+          "height": 250
+        },
+        {
+          "id": 3,
+          "image": "/images/about/about-03.png",
+          "class": "d-none d-md-block",
+          "width": 490,
+          "height": 500
+        }
+      ],
+      "children": [
+        {
+          "title": "Flexible Classes",
+          "icon": "feather-heart",
+          "isPrimary": false,
+          "info": "It is a long established fact that a reader will be distracted by this on readable content of when looking at its layout."
+        },
+        {
+          "title": "Learn From Anywhere",
+          "icon": "feather-book",
+          "isPrimary": true,
+          "info": "Sed distinctio repudiandae eos recusandae laborum eaque non eius iure suscipit laborum eaque non eius iure suscipit."
+        }
+      ]
+    }
+  ],
+  "aboutThree": [
+    {
+      "title": "About the University we are creative preapre you for your career supportive.",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore praesentium alias incidunt! Veritatis, necessitatibus fuga dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor similique architecto nihil! Ipsa aspernatur aperiam recusandae pariatur odit repudiandae assumenda architecto."
+    }
+  ],
+  "aboutFour": [
+    {
+      "title": "Graduate Programs.",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore praesentium alias incidunt! Veritatis, necessitatibus fuga dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor similique architecto nihil.",
+      "descTwo": "Graduate Programs dolor sit amet consectetur adipisicing elit. Nam inventore praesentium alias incidunt! Veritatis, necessitatibus fuga dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor similique architecto nihil."
+    }
+  ],
+  "aboutFive": [
+    {
+      "name": "John Lee",
+      "title": "The Founder Of Histudy Academy.",
+      "info": "Web teacher and leacture for future development.",
+      "designation": "Web designer & developer",
+      "phone": "+01910203040",
+      "address": "Dhaka, Bangladesh",
+      "authorImg": "/images/about/about-12.jpg",
+      "signature": "/images/shape/signature.png"
+    }
+  ],
+  "aboutSix": [
+    {
+      "tag": "ABOUT HISTUDY",
+      "title": "What is Histudy For You?.",
+      "strong": "Histudy educational platform",
+      "desc": "ipsum dolor sit amet consectetur adipisicing elit. Nam inventore praesentium alias incidunt! Veritatis, necessitatibus fuga dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor similique architecto nihil.",
+      "img": "/images/about/about-06.png"
+    }
+  ],
+  "aboutSaven": [
+    {
+      "tag": "ABOUT HISTUDY",
+      "title": "What is Histudy For You?.",
+      "strong": "Histudy educational platform",
+      "desc": "ipsum dolor sit amet consectetur adipisicing elit. Nam inventore praesentium alias incidunt! Veritatis, necessitatibus fuga dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor similique architecto nihil.",
+      "img": "/images/about/about-06.png"
+    }
+  ],
+  "aboutEight": [
+    {
+      "title": "What is Histudy For You?.",
+      "strong": "Histudy educational platform",
+      "desc": "ipsum dolor sit amet consectetur adipisicing elit. Nam inventore praesentium alias incidunt! Veritatis, necessitatibus fuga dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor similique architecto nihil."
+    }
+  ]
+}

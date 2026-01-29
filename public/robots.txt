@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://vidyarishi.com
+
+# Sitemaps
+Sitemap: https://vidyarishi.com/sitemap.xml
