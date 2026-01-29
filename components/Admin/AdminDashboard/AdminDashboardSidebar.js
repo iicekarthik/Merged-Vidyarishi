@@ -78,7 +78,7 @@ const AdminDashboardSidebar = () => {
 
             <nav className="mainmenu-nav">
               <ul className="dashboard-mainmenu rbt-default-sidebar-list">
-                {SidebarData.sidebar.slice(6, 8).map((item, index) => {
+                {SidebarData.sidebar.slice(6, 9).map((item, index) => {
                   if (item.action === "logout") {
                     return (
                       <li key={index}>
