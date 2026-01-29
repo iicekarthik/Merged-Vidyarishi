@@ -8,6 +8,7 @@ import HeaderStyleTen from "@/components/Header/HeaderStyle-Ten";
 import BackToTop from "@/pages/backToTop";
 import Separator from "@/components/Common/Separator";
 import FooterThree from "@/components/Footer/Footer-Three";
+import { useAppContext } from "@/context/Context";
 
 const QuizPage = () => {
     const router = useRouter();
@@ -21,6 +22,8 @@ const QuizPage = () => {
     const [reattemptMode, setReattemptMode] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [previousAttempt, setPreviousAttempt] = useState(null);
+    const { user } = useAppContext();
+    const isAdmin = user?.isAdmin || user?.role === "admin";
 
     // useEffect(() => {
     //     if (!courseId) return;
@@ -72,22 +75,72 @@ const QuizPage = () => {
     //         setLoading(false);
     //     }
     // };
+    // const loadQuiz = async () => {
+    //     try {
+    //         const [contentRes, enrollRes, attemptRes] = await Promise.all([
+    //             api.get(`/api/course-content/get-by-courseId?courseId=${courseId}`),
+    //             api.get("/api/dashboard/student/enrolled-courses"),
+    //             api.get(`/api/dashboard/student/lms/quiz-attempt/latest?courseId=${courseId}`),
+    //         ]);
+
+    //         setQuiz(contentRes.data.quiz);
+
+    //         // 🔹 If user already attempted
+    //         if (attemptRes.data) {
+    //             setPreviousAttempt(attemptRes.data);
+    //             setSubmitted(true);
+
+    //             // Prefill answers (IMPORTANT)
+    //             const prefilled = {};
+    //             contentRes.data.quiz.questions.forEach((q) => {
+    //                 prefilled[q.id] = attemptRes.data.selectedAnswers?.[q.id];
+    //             });
+
+    //             setAnswers(prefilled);
+
+    //             setResult({
+    //                 total: attemptRes.data.totalQuestions,
+    //                 correct: attemptRes.data.correctAnswers,
+    //                 wrong:
+    //                     attemptRes.data.totalQuestions -
+    //                     attemptRes.data.correctAnswers,
+    //                 percentage: attemptRes.data.score,
+    //             });
+    //         }
+    //     } catch {
+    //         toast.error("Failed to load quiz");
+    //         router.replace(`/course-player/${courseId}`);
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // };
+
     const loadQuiz = async () => {
         try {
-            const [contentRes, enrollRes, attemptRes] = await Promise.all([
-                api.get(`/api/course-content/get-by-courseId?courseId=${courseId}`),
-                api.get("/api/dashboard/student/enrolled-courses"),
-                api.get(`/api/dashboard/student/lms/quiz-attempt/latest?courseId=${courseId}`),
-            ]);
+            const contentRes = await api.get(
+                `/api/course-content/get-by-courseId?courseId=${courseId}`
+            );
 
             setQuiz(contentRes.data.quiz);
 
-            // 🔹 If user already attempted
+            // 🚫 STOP here for admin (view-only)
+            if (isAdmin) {
+                setLoading(false);
+                return;
+            }
+
+            // 👇 STUDENT ONLY
+            const [enrollRes, attemptRes] = await Promise.all([
+                api.get("/api/dashboard/student/enrolled-courses"),
+                api.get(
+                    `/api/dashboard/student/lms/quiz-attempt/latest?courseId=${courseId}`
+                ),
+            ]);
+
             if (attemptRes.data) {
                 setPreviousAttempt(attemptRes.data);
                 setSubmitted(true);
 
-                // Prefill answers (IMPORTANT)
                 const prefilled = {};
                 contentRes.data.quiz.questions.forEach((q) => {
                     prefilled[q.id] = attemptRes.data.selectedAnswers?.[q.id];
@@ -334,7 +387,8 @@ const QuizPage = () => {
 
                 {/* ACTION BUTTON */}
                 <div className="d-flex flex-wrap gap-3">
-                    {!submitted ? (
+                    
+                    {/* {!submitted ? (
                         <button
                             className="rbt-btn btn-gradient mt--20 mb--10"
                             onClick={handleSubmitQuiz}
@@ -355,6 +409,39 @@ const QuizPage = () => {
                         >
                             🔁 Reattempt Quiz
                         </button>
+                    )} */}
+
+                    {/* STUDENT: Submit */}
+                    {!submitted && !isAdmin && (
+                        <button
+                            className="rbt-btn btn-gradient mt--20 mb--10"
+                            onClick={handleSubmitQuiz}
+                        >
+                            Submit Quiz
+                        </button>
+                    )}
+
+                    {/* STUDENT: Reattempt */}
+                    {submitted && !reattemptMode && !isAdmin && (
+                        <button
+                            className="rbt-btn btn-border mt--20 mb--10"
+                            onClick={() => {
+                                setReattemptMode(true);
+                                setAnswers({});
+                                setSubmitted(false);
+                                setResult(null);
+                                toast.info("You can now reattempt the quiz");
+                            }}
+                        >
+                            🔁 Reattempt Quiz
+                        </button>
+                    )}
+
+                    {/* ADMIN: Preview badge */}
+                    {isAdmin && (
+                        <div className="rbt-badge bg-secondary-opacity mt--20 mb--10">
+                            👁 Admin Preview Mode 
+                        </div>
                     )}
 
                     {submitted && !reattemptMode && (

@@ -153,7 +153,7 @@ const CourseLessonProp = ({
             </div>
           )}
 
-          {isQuizOnlyCourse && (
+          {/* {isQuizOnlyCourse && (
             <div className="rbt-alert alert-info mb--30">
               <h5 className="mb--10">📝 Final Quiz Available</h5>
               <p className="mb--15">
@@ -201,6 +201,69 @@ const CourseLessonProp = ({
                 </div>
               )}
 
+            </div>
+          )} */}
+
+          {(isQuizOnlyCourse || isAdmin) && (
+            <div className="rbt-alert alert-info mb--30">
+              <h5 className="mb--10">📝 Final Quiz Available</h5>
+              <p className="mb--15">
+                This course consists of a final assessment only.
+                Complete the quiz to unlock your certificate.
+              </p>
+
+              {/* ADMIN → DIRECT VIEW */}
+              {isAdmin && (
+                <button
+                  className="rbt-btn btn-border"
+                  onClick={() =>
+                    router.push(`/course-player/${courseId}/quiz`)
+                  }
+                >
+                  View Quiz (Admin)
+                </button>
+              )}
+
+              {/* STUDENT FLOW */}
+              {!isAdmin && !isEnrolled && (
+                <button
+                  className="rbt-btn btn-gradient"
+                  onClick={onEnroll}
+                >
+                  Enroll & Take Quiz
+                </button>
+              )}
+
+              {!isAdmin && isEnrolled && !isCompleted && (
+                <button
+                  className="rbt-btn btn-gradient"
+                  onClick={() =>
+                    router.push(`/course-player/${courseId}/quiz`)
+                  }
+                >
+                  Take Final Quiz
+                </button>
+              )}
+
+              {!isAdmin && isCompleted && (
+                <div className="d-flex flex-wrap gap-3">
+                  <div className="rbt-badge bg-success-opacity">
+                    ✔ Quiz Completed • Certificate Unlocked
+                  </div>
+
+                  <button
+                    className="rbt-badge bg-success-opacity"
+                    onClick={() =>
+                      window.open(
+                        `/api/dashboard/student/lms/certificate/generate?courseId=${courseId}`,
+                        "_blank"
+                      )
+                    }
+                  >
+                    🎓 Download Certificate
+                  </button>
+                </div>
+              )}
             </div>
           )}
 
