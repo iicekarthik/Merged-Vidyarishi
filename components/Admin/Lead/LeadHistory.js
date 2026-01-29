@@ -453,8 +453,8 @@ const LeadHistory = () => {
                             <thead>
                                 <tr>
                                     <th>Student</th>
-                                    <th>Phone</th>
-                                    <th>Email</th>
+                                    <th>Email & Phone</th>
+                                    {/* <th>Email</th> */}
                                     <th>Location</th>
                                     <th>Course</th>
                                     <th>Course Progress</th>
@@ -475,10 +475,21 @@ const LeadHistory = () => {
                                         </td>
 
                                         <td>
+
+                                            <div className="small text-muted">
+                                                {l.email || "—"}
+                                            </div>
+
+                                            <div className="small">
+                                                📞 <a href={`tel:${l.phone}`}>{l.phone}</a>
+                                            </div>
+                                        </td>
+
+                                        {/* <td>
                                             <a href={`tel:${l.phone}`}>{l.phone}</a>
                                         </td>
 
-                                        <td>{l.email || "—"}</td>
+                                        <td>{l.email || "—"}</td> */}
                                         <td>{l.city}, {l.state}</td>
                                         <td>{l.course}</td>
                                         <td>
