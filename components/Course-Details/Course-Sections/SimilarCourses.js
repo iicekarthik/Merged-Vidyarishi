@@ -41,7 +41,7 @@ const SimilarCourses = ({ courses = [] }) => {
                 <div className="rbt-card-body">
                   <h4 className="rbt-card-title">
                     <Link href={`/course-details/${course.courseId}`}>
-                      {course.courseTitle}
+                      {course.title}
                     </Link>
                   </h4>
 
