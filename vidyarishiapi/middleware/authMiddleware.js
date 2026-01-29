@@ -19,21 +19,44 @@ export const authMiddleware = (handler) => {
     // Agar wo bhi invalid → user NOT authenticated.
     if (!user && refreshToken) {
       const payload = await verifyRefreshToken(refreshToken);
-      if (!payload) {
+
+      if (!payload?.id) {
         return res.status(401).json({ message: "Unauthorized" });
       }
 
-      // Naya access token create ho gaya
-      const admin = await Admin.findById(payload.id);
-      const newAccess = generateAccessToken(admin);
+      // ✅ DO NOT fetch Admin here
+      // ✅ Just regenerate access token using payload
+      const newAccess = jwt.sign(
+        { id: payload.id },
+        process.env.JWT_SECRET
+      );
 
       res.setHeader("Set-Cookie", [
-        `accessToken=${accessToken}; HttpOnly; Path=/; SameSite=Lax`,
+        `accessToken=${newAccess}; HttpOnly; Path=/; SameSite=Lax`,
         `refreshToken=${refreshToken}; HttpOnly; Path=/; Max-Age=604800; SameSite=Lax`,
       ]);
 
+      // ✅ This is what your routes need
       user = { id: payload.id };
     }
+
+    // if (!user && refreshToken) {
+    //   const payload = await verifyRefreshToken(refreshToken);
+    //   if (!payload) {
+    //     return res.status(401).json({ message: "Unauthorized" });
+    //   }
+
+    //   // Naya access token create ho gaya
+    //   const admin = await Admin.findById(payload.id);
+    //   const newAccess = generateAccessToken(admin);
+
+    //   res.setHeader("Set-Cookie", [
+    //     `accessToken=${accessToken}; HttpOnly; Path=/; SameSite=Lax`,
+    //     `refreshToken=${refreshToken}; HttpOnly; Path=/; Max-Age=604800; SameSite=Lax`,
+    //   ]);
+
+    //   user = { id: payload.id };
+    // }
 
     if (!user) {
       return res.status(401).json({ message: "Not authenticated" });

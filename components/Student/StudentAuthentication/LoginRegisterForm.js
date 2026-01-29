@@ -250,7 +250,7 @@ const LoginRegisterForm = ({ buttonName = "Continue", Inputheight = 50, InputFon
       <div className={styles.card}>
         <header className={styles.header}>
           <div>
-            <h3 className={styles.title}>Welcome to VidyaRishi</h3>
+            <h3 className={styles.title}>Welcome to Vidyarishi</h3>
             <p className={styles.subtitle}>
               {IsCurrentStep === 1 && "Enter your phone number"}
               {IsCurrentStep === 2 && "We sent an OTP to your phone"}
