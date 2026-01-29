@@ -161,8 +161,7 @@ const PaymentHistory = () => {
               <thead>
                 <tr>
                   <th>Student</th>
-                  {/* <th>Email</th> */}
-                  <th>Phone</th>
+                  <th>Email & Phone</th>
                   <th>Course Name</th>
                   <th>Order ID</th>
                   <th>Amount</th>
@@ -175,16 +174,19 @@ const PaymentHistory = () => {
                 {filtered.map(p => (
                   <tr key={p._id}>
                     <td>
-                      <strong>{p.userId?.fullName || p.customerName || "—"}</strong>
+                     <strong>{p.userId?.fullName || p.customerName || "—"}</strong>
+                    </td>
 
+                    <td>
                       <div className="small text-muted">
                         {p.userId?.email || p.customerEmail || "—"}
                       </div>
 
+                      <div className="small">
+                        📞 <a href={`tel:${p.userId?.phone}`}>{p.userId?.phone || p.customerPhone || "—"}</a>
+                      </div>
                     </td>
-                    {/* <td>{p.userId?.fullName || p.customerName || "—"}</td> */}
-                    {/* <td>{p.userId?.email || p.customerEmail || "—"}</td> */}
-                    <td>{p.userId?.phone || p.customerPhone || "—"}</td>
+
                     <td>{p.orderNote}</td>
                     <td>{p.orderId}</td>
                     <td>₹{p.orderAmount}</td>

@@ -231,8 +231,8 @@ const EnquiredHistory = () => {
                             <thead>
                                 <tr>
                                     <th>Student</th>
-                                    <th>Phone</th>
-                                    <th>Email</th>
+                                    <th>Email & Phone</th>
+                                    {/* <th>Email</th> */}
                                     <th>Course</th>
                                     <th>Date</th>
                                     <th>Status</th>
@@ -248,10 +248,20 @@ const EnquiredHistory = () => {
                                         </td>
 
                                         <td>
+                                            <div className="small text-muted">
+                                               {e.email || "—"}
+                                            </div>
+
+                                            <div className="small">
+                                                📞 <a href={`tel:${e.phone}`}>{e.phone}</a>
+                                            </div>
+                                        </td>
+
+                                        {/* <td>
                                             <a href={`tel:${e.phone}`}>{e.phone}</a>
                                         </td>
 
-                                        <td>{e.email || "—"}</td>
+                                        <td>{e.email || "—"}</td> */}
                                         <td>{e.courseName}</td>
                                         <td>{new Date(e.createdAt).toLocaleDateString()}</td>
 
