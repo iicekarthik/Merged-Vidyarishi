@@ -49,6 +49,26 @@
   color: #555;
 }
 
+.passwordWrapper {
+  position: relative;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.togglePassword:hover {
+  color: #000;
+}
+
 .buttonRow {
   display: flex;
   gap: 12px;

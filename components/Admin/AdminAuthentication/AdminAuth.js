@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import api from "@/vidyarishiapi/lib/axios";
 import { toast } from "react-toastify";
 import styles from "./AdminAuth.module.css";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const AdminAuth = () => {
   const router = useRouter();
@@ -43,6 +44,8 @@ const AdminAuth = () => {
       setLoading(false);
     }
   };
+
+  const [showPassword, setShowPassword] = useState(false);
 
   // STEP 2: OTP VERIFY
   const verifyOtp = async () => {
@@ -96,14 +99,27 @@ const AdminAuth = () => {
               className={styles.input}
             />
 
-            <input
-              name="password"
-              type="password"
-              placeholder="Password"
-              value={form.password}
-              onChange={handleChange}
-              className={styles.input}
-            />
+            <div className={styles.passwordWrapper}>
+              <input
+                name="password"
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                value={form.password}
+                onChange={handleChange}
+                className={styles.input}
+              />
+              <span
+                className={styles.togglePassword}
+                onClick={() => setShowPassword(!showPassword)}
+                aria-label="Toggle password visibility"
+              >
+                {showPassword ? (
+                  <AiOutlineEyeInvisible size={20} />
+                ) : (
+                  <AiOutlineEye size={20} />
+                )}
+              </span>
+            </div>
 
             <button
               type="button"
@@ -126,7 +142,7 @@ const AdminAuth = () => {
               inputMode="numeric"
               className={styles.input}
             />
-            
+
             <p className={styles.infoText}>
               Didn't receive a code? Go back and try again.
             </p>
