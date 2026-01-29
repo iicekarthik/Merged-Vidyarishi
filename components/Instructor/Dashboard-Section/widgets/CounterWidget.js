@@ -1,16 +1,16 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { useInView } from "react-intersection-observer";
 import "odometer/themes/odometer-theme-default.css";
 import Image from "next/image";
 
+let loadedCallback = null;
+let loaded = false;
+
 const Odometer = dynamic(() => import("react-odometerjs"), {
   ssr: false,
   loading: () => <span>00</span>,
 });
-
 const CounterWidget = ({
   counterStyle = "one",
   icon,
@@ -21,36 +21,29 @@ const CounterWidget = ({
   iconClass,
   numberClass,
 }) => {
-  const [odometerLoaded, setOdometerLoaded] = useState(false);
+  const [odometerLoaded, setOdometerLoaded] = useState(loaded);
   const [odometerValue, setOdometerValue] = useState(0);
+
+  loadedCallback = () => {
+    setOdometerLoaded(true);
+  };
 
   const { ref, inView } = useInView({
     threshold: 0,
-    triggerOnce: true,
   });
 
-  // Odometer initial load
-  useEffect(() => {
-    setOdometerLoaded(true);
-  }, []);
-
-  // Set initial value after odometer loads
   useEffect(() => {
     if (odometerLoaded) {
       setOdometerValue(1);
     }
   }, [odometerLoaded]);
 
-  // Animate when visible
   useEffect(() => {
-    if (inView) {
-      setOdometerValue(value);
-    }
+    if (inView) setOdometerValue(value);
   }, [inView, value]);
 
   return (
     <>
-      {/* Style One */}
       {counterStyle === "one" && (
         <div className="rbt-counterup rbt-hover-03 border-bottom-gradient">
           <div className="top-circle-shape" />
@@ -62,8 +55,7 @@ const CounterWidget = ({
             )}
             <div className="content">
               <h3 className="counter">
-                {/* FIXED: Pass correct number */}
-                <Odometer format="d" duration={1000} value={odometerValue} />
+                <Odometer format="d" duration={1000} value={numberClass} />
               </h3>
               <span className="subtitle">{title}</span>
             </div>
@@ -71,7 +63,6 @@ const CounterWidget = ({
         </div>
       )}
 
-      {/* Style Two */}
       {counterStyle === "two" && (
         <div
           ref={ref}
@@ -91,7 +82,6 @@ const CounterWidget = ({
         </div>
       )}
 
-      {/* Style Three */}
       {counterStyle === "three" && (
         <div className="rbt-counterup rbt-hover-03 style-2 text-color-white">
           <div ref={ref} className="inner">
@@ -106,7 +96,6 @@ const CounterWidget = ({
         </div>
       )}
 
-      {/* Style Four */}
       {counterStyle === "four" && (
         <div ref={ref} className="rbt-counterup style-2">
           <div className="inner">

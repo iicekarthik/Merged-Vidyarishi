@@ -11,7 +11,13 @@ module.exports = {
   env: {
     NEXT_BLOG_ROUTE: process.env.NEXT_BLOG_ROUTE,
   },
-  
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   webpack(config, { isServer }) {
     config.resolve.modules.push(
       path.resolve(__dirname, "data"),

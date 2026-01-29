@@ -2,7 +2,7 @@ import PageHead from "../Head";
 import HeaderStyleTen from "@/components/Header/HeaderStyle-Ten";
 import Separator from "@/components/Common/Separator";
 import MobileMenu from "@/components/Header/MobileMenu";
-import Cart from "@/components/Header/Offcanvas/Cart";
+import Cart from "@/components/Student/Student-dashboard/Cart";
 
 import Context from "@/context/Context";
 import { Provider } from "react-redux";

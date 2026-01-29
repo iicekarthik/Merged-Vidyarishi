@@ -10,7 +10,7 @@ import AboutSaven from "../Abouts/About-Saven";
 import Service from "../Services/Service";
 import BrandThree from "../Brand/Brand-Three";
 import SingleCourseProp from "../11-single-course/SingleCourseProp";
-import CourseLessonProp from "../11-single-course/CourseLessonProp";
+import CourseLessonProp from "../Course-Details/Course-Sections/CourseLessonProp";
 import TestimonialFour from "../Testimonials/Testimonial-Four";
 import TeacherGallery from "../Become-a-Teacher/TeacherGallery";
 import NewsletterFour from "../Newsletters/Newsletter-Four";

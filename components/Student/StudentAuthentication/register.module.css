@@ -1,0 +1,597 @@
+/* 
+.wrapper {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.35); 
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+} */
+
+.card {
+  width: 100%;
+  max-width: 880px;
+  background: #ffffff;
+  padding: 32px 32px 26px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.15);
+  animation: popupFade .3s ease-out;
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.dividerLine {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #0f172a, #2563eb);
+  border-radius: 999px;
+  margin: 14px 0;
+}
+
+/* Stepbar */
+
+.stepbarWrapper {
+  margin: 8px 0 18px;
+}
+
+.pillRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+}
+
+.pillNum {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background: #e5e7eb;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  transition: all .22s ease;
+}
+
+.pill[data-active="true"] .pillNum {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #1d4ed8;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
+}
+
+.pillLabel {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.stepLine {
+  flex: 1;
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+}
+
+.stepProgress {
+  position: absolute;
+  inset: 0;
+  width: 0;
+  background: #2563eb;
+  transition: width 320ms cubic-bezier(.2, .9, .3, 1);
+}
+
+/* Body & Form */
+
+.body {
+  padding-top: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  width: 100%;
+}
+
+/* Inputs (Floating Label) */
+
+.floatingLabel {
+  position: relative;
+  display: block;
+}
+
+.input,
+.selectInput {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  padding: 16px 14px 6px 14px;
+  outline: none;
+  font-size: 15px;
+  color: #6c6f75;
+  transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.input:focus,
+.selectInput:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25);
+}
+
+/* .labelText {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  pointer-events: none;
+  font-size: 13px;
+  color: #9ca3af;
+  transition: transform .18s ease, font-size .18s ease, top .18s ease, color .18s ease;
+}
+
+.floatingLabel .input:focus + .labelText,
+.floatingLabel .input:not(:placeholder-shown) + .labelText {
+  transform: translateY(-9px);
+  font-size: 11px;
+  top: 6px;
+  color: #2563eb;
+} */
+
+/* For select with same pattern */
+.floatingLabelSelect {
+  position: relative;
+  display: block;
+}
+
+.selectInput {
+  padding: 14px;
+  appearance: none;
+}
+
+.courseselectInput {
+  height: 55px;
+  padding: 14px;
+  appearance: none;
+}
+
+/* OTP */
+
+.otpContainer {
+  text-align: center;
+}
+
+.otpTitle {
+  font-weight: 700;
+  margin-top: 10px;
+  color: #0f172a;
+}
+
+.otpRow {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.otpBox {
+  width: 52px;
+  height: 56px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  font-weight: 600;
+  transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.otpBox:focus {
+  border-color: #2563eb;
+  background: #f9fafb;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25);
+}
+
+.timerRow {
+  margin-top: 10px;
+}
+
+.timerText {
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.resendText {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Invalid OTP shake */
+@keyframes shakeX {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shakeX .35s cubic-bezier(.36, .07, .19, .97);
+}
+
+/* Popup entrance */
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+
+.actionsRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.btnPrimary {
+  /* flex: 1; */
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  transition: background .18s ease, transform .12s ease, box-shadow .18s ease;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.25);
+}
+
+.btnPrimary:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.35);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btnGhost {
+  /* flex: 1; */
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  background: #f9fafb;
+  transition: border-color .15s ease, background .15s ease, color .15s ease;
+}
+
+.btnGhost:hover {
+  border-color: #2563eb;
+  color: #1d4ed8;
+  background: #ffffff;
+}
+
+/* Course Step */
+
+.courseStep {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Registration Layout */
+
+.regForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.regSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 280px;
+}
+
+.right {
+  width: 300px;
+}
+
+.regDivider {
+  width: 100%;
+  height: 1px;
+  background: transparent;
+}
+
+.regRowInline {
+  display: flex;
+  gap: 5px;
+}
+
+.genderinput {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  padding: 8px 10px 6px 4px;
+  outline: none;
+  font-size: 15px;
+  color: #6c6f75;
+  transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.genderinput:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25);
+}
+
+.stateCityRow {
+  display: flex;
+  gap: 12px;
+}
+
+/* Checkbox */
+
+.regCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+}
+
+.regCheckbox input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.checkboxBox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cbd5e1;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.regCheckbox input[type="checkbox"]:checked+.checkboxBox {
+  background: #2563eb;
+  border-color: #1d4ed8;
+}
+
+.checkboxTick {
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkboxText {
+  color: #141415;
+}
+
+/* Registration Buttons */
+
+.regActions {
+  display: flex;
+  gap: 10px;
+}
+
+.regActions button {
+  flex: 1;
+  height: 44px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.regActions button[type="submit"] {
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+}
+
+.regActions button[type="button"] {
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+
+/* Responsive */
+
+@media (min-width: 760px) {
+  .regSection {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .regDivider {
+    width: 1px;
+    height: auto;
+    background: #e5e7eb;
+  }
+}
+
+@media (max-width: 650px) {
+  /* .wrapper {
+    position: static;
+    inset: auto;
+    background: #f8fafc;
+    backdrop-filter: none;
+    padding: 12px;
+    align-items: flex-start;
+  } */
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+
+  .progressToast {
+    position: fixed;
+    bottom: 8px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .otpRow {
+    gap: 10px;
+  }
+
+  .otpBox {
+    width: 46px;
+    height: 50px;
+  }
+
+  .input,
+  .selectInput {
+    height: 46px;
+    padding: 14px 12px 6px;
+  }
+
+  .actionsRow {
+    flex-direction: column;
+  }
+
+  .regSection {
+    gap: 12px;
+  }
+
+  .regDivider {
+    width: 100%;
+    height: 2px;
+    background: #e5e7eb;
+  }
+
+  .floatingLabel {
+    width: 100%;
+  }
+
+  .btnPrimary {
+    /* flex: 1; */
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .btnGhost {
+    /* flex: 1; */
+    height: 40px;
+  }
+
+  .stateCityRow {
+    flex-direction: row;
+  }
+}
+
+/* Fix dropdown click issue */
+.header-right,
+.account-access,
+.rbt-button-group {
+  overflow: visible !important;
+  position: relative !important;
+  z-index: inherit !important;
+}
+
+.profile-dropdown {
+  pointer-events: auto !important;
+  overflow: visible !important;
+}

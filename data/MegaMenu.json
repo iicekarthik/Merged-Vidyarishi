@@ -102,14 +102,12 @@
           "title": "Online Course",
           "img": "/images/splash/demo/h10.jpg"
         },
-
         {
           "id": 15,
           "link": "/02-course-school",
           "title": "Course School",
           "img": "/images/splash/demo/h2.jpg"
         },
-
         {
           "id": 17,
           "link": "/",
@@ -309,6 +307,36 @@
             {
               "title": "Settings",
               "link": "/dashboard/settings"
+            }
+          ]
+        },
+        {
+          "title": "Admin Dashboard",
+          "hasSubmenu": true,
+          "submenuItems": [
+            {
+              "title": "Dashboard",
+              "link": "/admin-dashboard"
+            },
+            {
+              "title": "Users",
+              "link": "/admin-dashboard/users"
+            },
+            {
+              "title": "Courses",
+              "link": "/admin-dashboard/courses"
+            },
+            {
+              "title": "Payments",
+              "link": "/admin-dashboard/payments"
+            },
+            {
+              "title": "Leads",
+              "link": "/admin-dashboard/leads"
+            },
+            {
+              "title": "Settings",
+              "link": "/admin-dashboard/settings"
             }
           ]
         }
@@ -699,6 +727,12 @@
           "id": 2,
           "title": "Free Courses",
           "link": "/free-courses",
+          "badgeText": ""
+        },
+        {
+          "id": 3,
+          "title": "Vidyarishi Courses",
+          "link": "/vidyarishi-courses",
           "badgeText": ""
         }
       ],

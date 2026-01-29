@@ -6,6 +6,8 @@ import PrivacyFooter from "../termAndCondition/PrivacyFooter";
 import axios from "axios";
 import { load } from "@cashfreepayments/cashfree-js";
 import countriesData from "country-codes-list/dist/countriesData";
+import { useRouter } from "next/router";
+import { useAppContext } from "@/context/Context";
 
 const PayOnlineComp = () => {
   const [copied, setCopied] = useState(false);
@@ -91,6 +93,7 @@ const PayOnlineComp = () => {
         body: JSON.stringify({
           orderId,
           orderAmount: courseFee,
+          courseIds: selectedCourseIds,
           courseName,
           Name: name,
           Phone: fullPhoneNumber,
@@ -140,6 +143,61 @@ const PayOnlineComp = () => {
   //     document.body.appendChild(script);
   //   });
   // };
+
+  const { user } = useAppContext();
+  const router = useRouter();
+  const { courseIds, courseName, courseFee } = router.query;
+
+  // const { courseName, courseFee } = router.query;
+
+  // useEffect(() => {
+  //   if (courseName || courseFee) {
+  //     setFormData((prev) => ({
+  //       ...prev,
+  //       courseName: courseName || "",
+  //       courseFee: courseFee || "",
+  //     }));
+  //   }
+  // }, [courseName, courseFee]);
+
+  useEffect(() => {
+    if (user) {
+      setFormData((prev) => ({
+        ...prev,
+        name: user.fullName || "",
+        email: user.email || "",
+        phone: user.phone?.replace("+91", "") || "",
+        countryCode: "91",
+      }));
+    }
+  }, [user]);
+
+  const [selectedCourseIds, setSelectedCourseIds] = useState([]);
+  useEffect(() => {
+    if (courseIds) {
+      try {
+        const parsed =
+          typeof courseIds === "string"
+            ? JSON.parse(courseIds)
+            : courseIds;
+
+        setSelectedCourseIds(parsed);
+      } catch (err) {
+        console.error("Invalid courseIds:", err);
+        setSelectedCourseIds([]);
+      }
+    }
+  }, [courseIds]);
+
+  useEffect(() => {
+    if (router.isReady) {
+      setFormData((prev) => ({
+        ...prev,
+        courseName: courseName || "Selected Course",
+        courseFee: courseFee || "",
+      }));
+    }
+  }, [router.isReady, courseName, courseFee]);
 
   return (
     <>
@@ -426,6 +484,7 @@ const PayOnlineComp = () => {
                 name="courseName"
                 value={formData.courseName}
                 onChange={handleChange}
+                readOnly
                 required
                 style={{
                   border: "1px solid #ddd",
@@ -441,6 +500,7 @@ const PayOnlineComp = () => {
                 name="courseFee"
                 value={formData.courseFee}
                 onChange={handleChange}
+                readOnly
                 required
                 style={{
                   border: "1px solid #ddd",

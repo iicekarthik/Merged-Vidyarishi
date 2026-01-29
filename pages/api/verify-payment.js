@@ -4,6 +4,7 @@ import Payment from "../../models/Payment";
 import transporter from "@/lib/mail/mailer";
 import { receiptEmailTemplate } from "@/lib/templates/paymentReceipt";
 import { adminPaymentNotificationTemplate } from "@/lib/templates/paymentReceiptForAdmin";
+import Cart from "@/vidyarishiapi/models/User-info/Cart";
 
 export default async function handler(req, res) {
   await dbConnect();
@@ -21,7 +22,7 @@ export default async function handler(req, res) {
         headers: {
           "x-client-id": process.env.CASHFREE_APP_ID,
           "x-client-secret": process.env.CASHFREE_SECRET_KEY,
-          "x-api-version": "2022-09-01",
+          "x-api-version": "2023-08-01",
         },
       }
     );
@@ -29,6 +30,13 @@ export default async function handler(req, res) {
     if (!data?.order_status) {
       return res.status(400).json({ message: "Invalid Cashfree response" });
     }
+
+    const normalizedStatus =
+      data.order_status === "PAID" ||
+        data.order_status === "SUCCESS"
+        ? "PAID"
+        : "FAILED";
+
 
     const payment = await Payment.findOneAndUpdate(
       { orderId: order_id },
@@ -42,6 +50,12 @@ export default async function handler(req, res) {
 
     if (!payment) {
       return res.status(404).json({ message: "Payment not found" });
+    }
+
+    if (normalizedStatus === "PAID") {
+      await Cart.deleteMany({
+        userId: payment.userId, // 🔥 clears entire cart
+      });
     }
 
     // const customerName = payment.customerName;
@@ -83,7 +97,9 @@ export default async function handler(req, res) {
     // });
 
     return res.status(200).json({
-      status: data.order_status,
+      status: normalizedStatus,
+      // status: data.order_status,
+        courseIds: payment.courseIds, // ✅ REQUIRED
       payment: {
         orderAmount: data.order_amount,
         customerPhone: data.customer_details?.customer_phone,

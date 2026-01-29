@@ -1,0 +1,49 @@
+{
+    "sidebar": [
+        {
+            "link": "/admin-dashboard",
+            "text": "Dashboard",
+            "icon": "feather-home"
+        },
+        {
+            "link": "/admin-dashboard/courses",
+            "text": "Courses",
+            "icon": "feather-book"
+        },
+        {
+            "link": "/admin-dashboard/payments",
+            "text": "Payments",
+            "icon": "feather-credit-card"
+        },
+        {
+            "link": "/admin-dashboard/leads",
+            "text": "Leads",
+            "icon": "feather-phone-call"
+        },
+        {
+            "link": "/admin-dashboard/enquired",
+            "text": "Enquired",
+            "icon": "feather-help-circle"
+        },
+        {
+            "link": "/admin-dashboard/certificates",
+            "text": "Certificates",
+            "icon": "feather-award"
+        },
+        {
+            "link": "/admin-dashboard/profile",
+            "text": "My Profile",
+            "icon": "feather-users"
+        },
+        {
+            "link": "/admin-dashboard/settings",
+            "text": "Settings",
+            "icon": "feather-settings"
+        },
+        {
+            "action": "logout",
+            "text": "Logout",
+            "icon": "feather-log-out"
+        }
+    ]
+}

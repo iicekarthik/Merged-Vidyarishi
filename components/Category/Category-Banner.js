@@ -28,7 +28,7 @@ const CategoryBanner = ({ category }) => {
                     {" "}
                     {category && category.category
                       ? category.category
-                      : "All Courses"}
+                      : "All Vidyarishi Courses"}
                   </h3>
                   {/* <button href="#" className="rbt-badge-2">
                     <div className="image">🎉</div>

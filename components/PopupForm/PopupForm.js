@@ -26,7 +26,7 @@ const PopupForm = ({ TimeOutSeconds }) => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
       document.body.style.height = "100vh";
-      document.body.style.position = "fixed";
+      document.body.style.position = "fixed"; 
       document.body.style.width = "100%";
     } else {
       document.body.style.overflow = "auto";
@@ -92,7 +92,6 @@ const PopupForm = ({ TimeOutSeconds }) => {
               // padding: "20px",
               borderRadius: "8px",
               boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
-              width: "420px",
               maxWidth: "420px",
               padding: BigScreenLogic ? "0" : "0 20px",
               animation: "fadeInUp 0.4s ease-out",

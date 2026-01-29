@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { CheckCircle2, Loader2, XCircle } from "lucide-react";
+import api from "@/vidyarishiapi/lib/axios";
+import { sendReceiptEmail } from "@/utils/sendReceiptEmail"; // adjust path
+
 
 const PaymentSuccess = () => {
   const router = useRouter();
@@ -8,6 +11,7 @@ const PaymentSuccess = () => {
 
   const [status, setStatus] = useState("verifying");
   const [payment, setPayment] = useState(null);
+
 
   useEffect(() => {
     if (!order_id) return;
@@ -17,12 +21,49 @@ const PaymentSuccess = () => {
         const res = await fetch(`/api/verify-payment?order_id=${order_id}`);
         const data = await res.json();
 
-        if (res.ok) {
+        // if (res.ok) {
+        //   setPayment(data.payment);
+        //   setStatus(data.status === "PAID" ? "success" : "pending");
+        // } else {
+        //   setStatus("failed");
+        // }
+        if (res.ok && data.status === "PAID") {
           setPayment(data.payment);
-          setStatus(data.status === "PAID" ? "success" : "pending");
+          setStatus("success");
+
+          const courseId = data.courseId;
+          // ✅ SEND RECEIPT EMAIL (backend will fetch all data)
+          await sendReceiptEmail({
+            orderId: order_id,
+          });
+
+          // ✅ AUTO ENROLL
+          try {
+            for (const id of data.courseIds) {
+              try {
+                await api.post("/api/dashboard/student/lms/enroll", { courseId: id });
+              } catch (err) {
+                console.log("Already enrolled:", id);
+              }
+            }
+
+          } catch (err) {
+            // ignore if already enrolled
+            console.log("Already enrolled or enroll failed");
+          }
+
+          // ✅ AUTO REDIRECT (after 2 seconds)
+          setTimeout(() => {
+            router.replace(`/dashboard/enrolled-course`);
+            // OR
+            // router.replace(`/course-details/${courseId}`);
+            // router.replace("/");
+          }, 2000);
+
         } else {
           setStatus("failed");
         }
+
       } catch (err) {
         console.error("Verification error:", err);
         setStatus("failed");
@@ -48,9 +89,9 @@ const PaymentSuccess = () => {
   const orderNote = payment?.orderNote;
   const dateTime = payment?.createdAt
     ? new Date(payment.createdAt).toLocaleString("en-IN", {
-        dateStyle: "medium",
-        timeStyle: "short",
-      })
+      dateStyle: "medium",
+      timeStyle: "short",
+    })
     : "";
 
   const renderIcon = () => {
@@ -74,12 +115,12 @@ const PaymentSuccess = () => {
 
   return (
     <div style={styles.container}>
-        {status === "verifying" && (
-          <p style={styles.warning}>
-            ⚠️ Please do not refresh or close this page while your payment is
-            being verified.
-          </p>
-        )}
+      {status === "verifying" && (
+        <p style={styles.warning}>
+          ⚠️ Please do not refresh or close this page while your payment is
+          being verified.
+        </p>
+      )}
       <div style={styles.card}>
 
         <div style={{ marginBottom: "1.5rem" }}>{renderIcon()}</div>
@@ -88,8 +129,8 @@ const PaymentSuccess = () => {
           {status === "success"
             ? "Payment Successful"
             : status === "failed"
-            ? "Payment Failed"
-            : "Verifying Payment..."}
+              ? "Payment Failed"
+              : "Verifying Payment..."}
         </h2>
 
         {status === "success" && (
@@ -106,10 +147,16 @@ const PaymentSuccess = () => {
             </div>
 
             <div style={styles.buttonGroup}>
-              <ActionButton
+              {/* <ActionButton
                 text="Back to Home"
                 onClick={() => router.push("/pay-online")}
+              /> */}
+              <ActionButton
+                text="Go to Course"
+                primary
+                onClick={() => router.push(`/dashboard/enrolled-course`)}
               />
+
               {/* <ActionButton text="Print Receipt" onClick={handlePrint} primary /> */}
             </div>
           </>

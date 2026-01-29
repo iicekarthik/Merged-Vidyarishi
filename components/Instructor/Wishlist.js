@@ -1,5 +1,5 @@
 import Courses from "../../data/dashboard/instructor/instructor.json";
-import CourseWidgets from "./Dashboard-Section/widgets/CourseWidget";
+import CourseWidgets from "../Student/Student-dashboard/CourseWidget";
 
 const Wishlist = () => {
   return (

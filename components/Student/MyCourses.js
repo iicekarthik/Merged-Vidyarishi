@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Courses from "../../data/dashboard/instructor/instructor.json";
-import CourseWidget from "../Instructor/Dashboard-Section/widgets/CourseWidget";
+import CourseWidget from "./Student-dashboard/CourseWidget";
+
 const MyCourses = () => {
   return (
     <>

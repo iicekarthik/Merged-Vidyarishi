@@ -7,7 +7,10 @@ import { useAppContext } from "@/context/Context";
 import Nav from "../Nav";
 import { useEffect, useState } from "react";
 import PopupForm from "@/components/PopupForm/PopupForm";
-// import AuthenticationPopup from "@/components/Authentication/AuthenticationPopup";
+import AuthenticationPopup from "@/components/Student/StudentAuthentication/AuthenticationPopup";
+import UserProfileButton from "@/components/Student/StudentAuthentication/UserProfileButton";
+import AdminProfileButton from "@/components/Admin/Profile/AdminProfileButton";
+
 
 const HeaderRightTwo = ({ btnClass, btnText, userType }) => {
   const {
@@ -25,12 +28,53 @@ const HeaderRightTwo = ({ btnClass, btnText, userType }) => {
     setIsOpenLoginModal,
     IsPhoneNumber,
     setIsPhoneNumber,
+    user,
+    setUser
   } = useAppContext();
 
   const { total_items } = useSelector((state) => state.CartReducer);
 
   useEffect(() => {
     setIsOpen(false);
+
+    const fetchUser = async () => {
+      try {
+        // 🔑 Try Admin first
+        let res = await fetch("/api/admin/profile", {
+          credentials: "include",
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          setUser({
+            ...data.admin,
+            role: "admin",
+          });
+          return;
+        }
+
+        // 👤 Else try Student
+        res = await fetch("/api/dashboard/profile/profileroute", {
+          credentials: "include",
+        });
+
+        if (!res.ok) {
+          setUser(null);
+          return;
+        }
+
+        const data = await res.json();
+        setUser({
+          ...data,
+          role: "student",
+        });
+      } catch (err) {
+        setUser(null);
+      }
+    };
+
+
+    fetchUser();
   }, [IsOpenLoginModal]);
 
   return (
@@ -60,19 +104,27 @@ const HeaderRightTwo = ({ btnClass, btnText, userType }) => {
         </li>
 
         {/* Login/Register */}
-        {/* <li>
+        <li>
           <div className="rbt-button-group">
-            <button
-              className="rbt-btn3 btn-gradient"
-              style={{
-                marginLeft: "24px",
-              }}
-              onClick={() => setIsOpenLoginModal(true)}
-            >
-              Sign Up
-            </button>
+            {user ? (
+              user.role === "admin" ? (
+                <AdminProfileButton admin={user} />
+              ) : (
+                <UserProfileButton user={user} />
+              )
+
+            ) : (
+              <button
+                className="rbt-btn3 btn-gradient"
+                style={{ marginLeft: "24px" }}
+                onClick={() => setIsOpenLoginModal(true)}
+              >
+                Sign Up
+              </button>
+            )}
+
           </div>
-        </li> */}
+        </li>
       </ul>
 
       {/* Mobile Menu only */}
@@ -93,7 +145,7 @@ const HeaderRightTwo = ({ btnClass, btnText, userType }) => {
           <PopupForm TimeOutSeconds={100} />
         </>
       )}
-      {/* {IsOpenLoginModal && <AuthenticationPopup />} */}
+      {IsOpenLoginModal && <AuthenticationPopup />}
     </div>
   );
 };

@@ -1,94 +1,98 @@
-import Content from "./Course-Sections/Content";
 import CourseBanner from "./Course-Sections/Course-Banner";
 import CourseMenu from "./Course-Sections/Course-Menu";
-import Featured from "./Course-Sections/Featured";
-import Instructor from "./Course-Sections/Instructor";
 import Overview from "./Course-Sections/Overview";
-import RelatedCourse from "./Course-Sections/RelatedCourse";
-import Requirements from "./Course-Sections/Requirements";
-import Review from "./Course-Sections/Review";
-import Viedo from "./Course-Sections/Viedo";
+import CourseLessonProp from "./Course-Sections/CourseLessonProp";
+import FAQ from "./Course-Sections/FAQ";
+import CareerScope from "./Course-Sections/Career-Scope";
 
-const CourseDetailsOne = ({ checkMatchCourses }) => {
+const CourseDetailsOne = ({
+  checkMatchCourses,
+  courseContent,
+  isEnrolled,
+  onEnroll,
+  isCompleted,
+  user, // ✅ ADD THIS
+}) => {
+
+  const isQuizOnlyCourse =
+    Array.isArray(courseContent) &&
+    courseContent.length === 0 &&
+    checkMatchCourses?.contentType === "quizOnly";
+
+  if (!checkMatchCourses?.courseId) return null;
+
   return (
     <>
-      <div className="col-lg-8">
-        <div className="course-details-content">
-          <div className="rbt-course-feature-box rbt-shadow-box thuumbnail">
-            {checkMatchCourses.courseImg && (
-              <CourseBanner bannerImg={checkMatchCourses.courseImg} />
+      <div>
+        {/* Banner */}
+        <div>
+          {checkMatchCourses.courseImg && (
+            <CourseBanner
+              course={checkMatchCourses}
+              courseContent={courseContent}
+            />
+          )}
+        </div>
+
+        {/* Menu */}
+        <div className="rbt-inner-onepage-navigation sticky-top mt--30">
+          <CourseMenu />
+        </div>
+
+        {/* Overview */}
+        {Array.isArray(checkMatchCourses.courseOverview) &&
+          checkMatchCourses.courseOverview.map((data, index) => (
+            <Overview key={index} checkMatchCourses={data} />
+          ))}
+
+        {/* Course Content */}
+        <div
+          className="course-content rbt-shadow-box coursecontent-wrapper mt--30"
+          id="coursecontent"
+        >
+          {/* {Array.isArray(courseContent) && courseContent.length === 0 && (
+            <p className="text-muted">Course content will be available soon.</p>
+          )} */}
+
+          {checkMatchCourses?.contentType !== "quizOnly" &&
+            Array.isArray(courseContent) &&
+            courseContent.length === 0 && (
+              <p className="text-muted">Course content will be available soon.</p>
             )}
-          </div>
-          <div className="rbt-inner-onepage-navigation sticky-top mt--30">
-            <CourseMenu />
-          </div>
 
-          {checkMatchCourses &&
-            checkMatchCourses.courseOverview.map((data, index) => (
-              <Overview {...data} key={index} checkMatchCourses={data} />
-            ))}
-
-          <div
-            className="course-content rbt-shadow-box coursecontent-wrapper mt--30"
-            id="coursecontent"
-          >
-            {checkMatchCourses &&
-              checkMatchCourses.courseContent.map((data, index) => (
-                <Content {...data} key={index} checkMatchCourses={data} />
-              ))}
-          </div>
-
-          <div
-            className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30"
-            id="details"
-          >
-            <div className="row g-5">
-              {checkMatchCourses &&
-                checkMatchCourses.courseRequirement.map((data, index) => (
-                  <Requirements
-                    {...data}
-                    key={index}
-                    checkMatchCourses={data}
-                  />
-                ))}
-            </div>
-          </div>
-          <div
-            className="rbt-instructor rbt-shadow-box intructor-wrapper mt--30"
-            id="intructor"
-          >
-            {checkMatchCourses &&
-              checkMatchCourses.courseInstructor.map((data, index) => (
-                <Instructor {...data} key={index} checkMatchCourses={data} />
-              ))}
-          </div>
-          <div
-            className="rbt-review-wrapper rbt-shadow-box review-wrapper mt--30"
-            id="review"
-          >
-            <Review />
-          </div>
-
-          {checkMatchCourses &&
-            checkMatchCourses.featuredReview.map((data, index) => (
-              <Featured {...data} key={index} coursesFeatured={data} />
-            ))}
+          <CourseLessonProp
+            courseId={checkMatchCourses.courseId}
+            courseContent={courseContent}
+            isEnrolled={isEnrolled}
+            isCompleted={isCompleted}
+            onEnroll={onEnroll}
+            user={user}   // ✅ REQUIRED
+          />
         </div>
-        <div className="related-course mt--60">
-          {checkMatchCourses &&
-            checkMatchCourses.relatedCourse.map((data, index) => (
-              <RelatedCourse {...data} key={index} checkMatchCourses={data} />
-            ))}
+
+        {/* Career Scope */}
+        <div
+          className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30"
+          id="careerscope"
+        >
+          <div className="row g-5">
+            <CareerScope careerScope={checkMatchCourses?.meta?.careerScope} />
+          </div>
         </div>
+
+
+        {/* FAQ */}
+        <div
+          className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30"
+          id="faq"
+        >
+          <div className="row g-5">
+            <FAQ faq={checkMatchCourses?.meta?.faq} />
+          </div>
+        </div>
+
       </div>
 
-      <div className="col-lg-4">
-        <div className="course-sidebar sticky-top rbt-shadow-box course-sidebar-top rbt-gradient-border">
-          <div className="inner">
-            <Viedo checkMatchCourses={checkMatchCourses && checkMatchCourses} />
-          </div>
-        </div>
-      </div>
     </>
   );
 };

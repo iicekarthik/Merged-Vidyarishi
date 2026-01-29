@@ -37,7 +37,7 @@ export async function getStaticProps({ params }) {
     props: {
       CourseDetails: courseData || null,
     },
-    revalidate: 120, // Optional: Revalidate every 60s
+    revalidate: 60, // Optional: Revalidate every 60s
   };
 }
 

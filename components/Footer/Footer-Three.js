@@ -181,6 +181,18 @@ const FooterThree = () => {
     }
   }, []);
 
+  const [vidyarishiCourses, setVidyarishiCourses] = useState([]);
+
+  useEffect(() => {
+    const fetchCourseNames = async () => {
+      const res = await fetch("/api/footer/courses/names");
+      const data = await res.json();
+      setVidyarishiCourses(data);
+    };
+
+    fetchCourseNames();
+  }, []);
+
   const ScreenSize = useScreenSize();
   const BigScreen = ["xxl", "xl", "lg"].includes(ScreenSize);
   const BigScreen2 = ["xxl"].includes(ScreenSize);
@@ -403,9 +415,9 @@ const FooterThree = () => {
                     />
 
                     <SingleFooter
-                      classOne="col-lg-3 col-md-12 col-sm-12 col-12 "
-                      title="Online & Distance MBA Courses"
-                      footerType2={OnlineDistanceMba}
+                      classOne="col-lg-3 col-md-12 col-sm-12 col-12"
+                      title="Vidyarishi Courses"
+                      footerType={vidyarishiCourses}
                     />
 
                     <div

@@ -92,7 +92,8 @@ const CategoryHead = ({
                           </span>
                         ) : (
                           <span className="course-index">
-                            Showing 1-{category.length / 2} of {category.length}
+                            {/* Showing 1-{category.length / 2} of {category.length */}
+                            {category?.length || 0} Courses Available
                             <span className="ms-1">results</span>
                           </span>
                         )}
@@ -100,7 +101,7 @@ const CategoryHead = ({
                     )}
                   </div>
                 </div>
-                <div className="col-lg-7 col-md-12">
+                {/* <div className="col-lg-7 col-md-12">
                   <div className="rbt-sorting-list d-flex flex-wrap align-items-end justify-content-start justify-content-lg-end">
                     {path === "/course-with-sidebar" ? (
                       ""
@@ -218,7 +219,7 @@ const CategoryHead = ({
                   </div>
                 ) : (
                   ""
-                )}
+                )} */}
               </div>
             </div>
           </div>

@@ -27,12 +27,13 @@ const Context = ({ children }) => {
   const [IsPhoneNumber, setIsPhoneNumber] = useState("");
   const [IsUserExist, setIsUserExist] = useState(null);
   const [IsCurrentStep, setIsCurrentStep] = useState(1);
+  const [user, setUser] = useState(null);
   // const [Isotp, setIsOtp] = useState("");
 
   useEffect(() => {
     dispatch({ type: "COUNT_CART_TOTALS" });
   }, [cart]);
-
+  
   return (
     <CreateContext.Provider
       value={{
@@ -71,6 +72,8 @@ const Context = ({ children }) => {
         setIsUserExist,
         IsCurrentStep,
         setIsCurrentStep,
+        user,
+        setUser,
         // Isotp,
         // setIsOtp,
       }}

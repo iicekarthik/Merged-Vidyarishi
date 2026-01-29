@@ -2,6 +2,18 @@ import mongoose from "mongoose";
 
 const PaymentSchema = new mongoose.Schema(
   {
+    userId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      required: true
+    },
+    courseIds: [
+      {
+        type: Number,
+        required: true
+      }
+    ],
+
     cfOrderId: { type: Number },
     orderId: { type: String, required: true, unique: true },
     customerName: String,

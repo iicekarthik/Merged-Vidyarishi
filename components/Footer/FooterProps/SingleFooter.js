@@ -59,7 +59,7 @@ const SingleFooter = ({
             </>
           )}
 
-          {!isUniversity &&
+          {/* {!isUniversity &&
             footerType?.map((value, innerIndex) => (
               <li key={innerIndex}>
                 <Link
@@ -68,6 +68,21 @@ const SingleFooter = ({
                   }`}
                 >
                   {value.course_name}
+                </Link>
+              </li>
+            ))} */}
+
+          {!isUniversity &&
+            footerType?.map((value, innerIndex) => (
+              <li key={innerIndex}>
+                <Link
+                  href={
+                    value.course_link
+                      ? `course/${value.course_link}`          // JSON courses
+                      : `/course-details/${value.courseId}`    // DB courses
+                  }
+                >
+                  {value.course_name || value.title}
                 </Link>
               </li>
             ))}
@@ -140,6 +155,7 @@ const SingleFooter = ({
                 )}
               </div>
             ))}
+
         </ul>
       </div>
     </div>

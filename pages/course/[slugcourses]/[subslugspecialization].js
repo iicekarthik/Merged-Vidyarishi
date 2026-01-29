@@ -69,7 +69,7 @@ export async function getStaticProps({ params }) {
       CourseDetails: course,
       specialization: specialization,
     },
-    revalidate: 120,
+    revalidate: 60,
   };
 }
 
