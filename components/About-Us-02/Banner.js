@@ -47,7 +47,7 @@ const Banner = () => {
               <p className=" has-medium-font-size mt--20">
                 {/* Dive in and learn React.js from scratch! Learn Reactjs, Hooks,
                 Redux, React Routing, Animations, Next.js and way more! */}
-                VidyaRishi is a premier online education platform offering
+                Vidyarishi is a premier online education platform offering
                 expert-led, industry-focused learning. We leverage advanced
                 technology to deliver accessible, high-quality education,
                 empowering learners with the skills needed for career success.
