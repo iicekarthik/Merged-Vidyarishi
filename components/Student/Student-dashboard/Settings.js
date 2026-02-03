@@ -5,6 +5,7 @@ import Link from "next/link";
 import AllCoursesVidya from "@/data/vidya/VidyaCourses.json";
 import IndianStates from "@/data/indianStates.json";
 import { toast } from "react-toastify";
+import InitialAvatar from "./Avatar/InitialAvatar";
 
 const Setting = () => {
   const [user, setUser] = useState(null);
@@ -23,53 +24,53 @@ const Setting = () => {
   const [photoPreview, setPhotoPreview] = useState(null);
 
   const uploadPhoto = async (file) => {
-  if (!file) return;
+    if (!file) return;
 
-  if (!file.type.startsWith("image/")) {
-    toast.error("Only image files are allowed");
-    return;
-  }
-
-  if (file.size > 2 * 1024 * 1024) {
-    toast.error("Image must be under 2MB");
-    return;
-  }
-
-  const formData = new FormData();
-  formData.append("photo", file);
-
-  try {
-    const res = await fetch(
-      "/api/dashboard/profile/user-upload-photo",
-      {
-        method: "POST",
-        credentials: "include",
-        body: formData,
-      }
-    );
-
-    const data = await res.json();
-
-    if (!res.ok) {
-      toast.error(data.message || "Image upload failed");
+    if (!file.type.startsWith("image/")) {
+      toast.error("Only image files are allowed");
       return;
     }
 
-    setPhotoPreview(data.profileImage);
-    setUser((prev) => ({
-      ...prev,
-      profileImage: {
-        url: data.profileImage,
-        public_id: prev?.profileImage?.public_id,
-      },
-    }));
+    if (file.size > 2 * 1024 * 1024) {
+      toast.error("Image must be under 2MB");
+      return;
+    }
 
-    toast.success("Profile photo updated successfully");
-  } catch (err) {
-    toast.error("Failed to upload profile photo");
-  }
-};
-  
+    const formData = new FormData();
+    formData.append("photo", file);
+
+    try {
+      const res = await fetch(
+        "/api/dashboard/profile/user-upload-photo",
+        {
+          method: "POST",
+          credentials: "include",
+          body: formData,
+        }
+      );
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        toast.error(data.message || "Image upload failed");
+        return;
+      }
+
+      setPhotoPreview(data.profileImage);
+      setUser((prev) => ({
+        ...prev,
+        profileImage: {
+          url: data.profileImage,
+          public_id: prev?.profileImage?.public_id,
+        },
+      }));
+
+      toast.success("Profile photo updated successfully");
+    } catch (err) {
+      toast.error("Failed to upload profile photo");
+    }
+  };
+
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -127,9 +128,9 @@ const Setting = () => {
   };
 
   const isValidEmail = (email) => {
-  if (!email) return true; // allow empty
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-};
+    if (!email) return true; // allow empty
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
 
   // helper: basic safe url check
   const isSafeUrl = (value) => {
@@ -142,123 +143,123 @@ const Setting = () => {
     }
   };
 
- const handleUpdateProfile = async (e) => {
-  e.preventDefault();
-  if (!user) return;
+  const handleUpdateProfile = async (e) => {
+    e.preventDefault();
+    if (!user) return;
 
-  const { firstName, lastName } = splitName(user.fullName || "");
+    const { firstName, lastName } = splitName(user.fullName || "");
 
-  if (!firstName.trim()) {
-    toast.error("First name is required");
-    return;
-  }
+    if (!firstName.trim()) {
+      toast.error("First name is required");
+      return;
+    }
 
-  if (!isValidPhone(user.alternatePhone)) {
-    toast.error("Alternate phone must be a valid 10-digit number");
-    return;
-  }
+    if (!isValidPhone(user.alternatePhone)) {
+      toast.error("Alternate phone must be a valid 10-digit number");
+      return;
+    }
 
-  if (!isValidEmail(user.alternateEmail)) {
-    toast.error("Alternate email is invalid");
-    return;
-  }
+    if (!isValidEmail(user.alternateEmail)) {
+      toast.error("Alternate email is invalid");
+      return;
+    }
 
-  if (bio.length > 300) {
-    toast.error("Bio should not exceed 300 characters");
-    return;
-  }
+    if (bio.length > 300) {
+      toast.error("Bio should not exceed 300 characters");
+      return;
+    }
 
-  const payload = {
-    firstName,
-    lastName,
-    alternatePhone: user.alternatePhone,
-    alternateEmail: user.alternateEmail,
-    skill: user.skill,
-    biography: bio,
-    gender: user.gender,
-    dob: user.dob,
-    qualification: user.qualification,
-    state: user.state,
-    city: user.city,
-    course: user.course,
+    const payload = {
+      firstName,
+      lastName,
+      alternatePhone: user.alternatePhone,
+      alternateEmail: user.alternateEmail,
+      skill: user.skill,
+      biography: bio,
+      gender: user.gender,
+      dob: user.dob,
+      qualification: user.qualification,
+      state: user.state,
+      city: user.city,
+      course: user.course,
+    };
+
+    setSavingProfile(true);
+    try {
+      const res = await fetch(
+        "/api/dashboard/profile/update-profile-info",
+        {
+          method: "POST",
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const data = await res.json();
+
+      if (!res.ok || data.status !== "success") {
+        toast.error(data.message || "Profile update failed");
+        return;
+      }
+
+      setUser(data.user);
+      setBio(data.user.biography || "");
+
+      toast.success("Profile updated successfully");
+    } catch (err) {
+      toast.error("Something went wrong while saving profile");
+    } finally {
+      setSavingProfile(false);
+    }
   };
 
-  setSavingProfile(true);
-  try {
-    const res = await fetch(
-      "/api/dashboard/profile/update-profile-info",
-      {
-        method: "POST",
-        credentials: "include",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+  const handleUpdateSocial = async (e) => {
+    e.preventDefault();
+
+    for (const key of Object.keys(socialLinks)) {
+      if (!isSafeUrl(socialLinks[key])) {
+        toast.error(
+          `${key.toUpperCase()} must start with http:// or https://`
+        );
+        return;
       }
-    );
-
-    const data = await res.json();
-
-    if (!res.ok || data.status !== "success") {
-      toast.error(data.message || "Profile update failed");
-      return;
     }
 
-    setUser(data.user);
-    setBio(data.user.biography || "");
-
-    toast.success("Profile updated successfully");
-  } catch (err) {
-    toast.error("Something went wrong while saving profile");
-  } finally {
-    setSavingProfile(false);
-  }
-};
-
-const handleUpdateSocial = async (e) => {
-  e.preventDefault();
-
-  for (const key of Object.keys(socialLinks)) {
-    if (!isSafeUrl(socialLinks[key])) {
-      toast.error(
-        `${key.toUpperCase()} must start with http:// or https://`
+    setSavingSocial(true);
+    try {
+      const res = await fetch(
+        "/api/dashboard/profile/update-profile-social",
+        {
+          method: "POST",
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(socialLinks),
+        }
       );
-      return;
-    }
-  }
 
-  setSavingSocial(true);
-  try {
-    const res = await fetch(
-      "/api/dashboard/profile/update-profile-social",
-      {
-        method: "POST",
-        credentials: "include",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(socialLinks),
+      const data = await res.json();
+
+      if (!res.ok || data.status !== "success") {
+        toast.error(data.message || "Failed to update social links");
+        return;
       }
-    );
 
-    const data = await res.json();
+      setSocialLinks({
+        facebook: data.user?.facebook || "",
+        twitter: data.user?.twitter || "",
+        linkedin: data.user?.linkedin || "",
+        website: data.user?.website || "",
+        github: data.user?.github || "",
+      });
 
-    if (!res.ok || data.status !== "success") {
-      toast.error(data.message || "Failed to update social links");
-      return;
+      toast.success("Social links updated successfully");
+    } catch (err) {
+      toast.error("Something went wrong");
+    } finally {
+      setSavingSocial(false);
     }
-
-    setSocialLinks({
-      facebook: data.user?.facebook || "",
-      twitter: data.user?.twitter || "",
-      linkedin: data.user?.linkedin || "",
-      website: data.user?.website || "",
-      github: data.user?.github || "",
-    });
-
-    toast.success("Social links updated successfully");
-  } catch (err) {
-    toast.error("Something went wrong");
-  } finally {
-    setSavingSocial(false);
-  }
-};
+  };
 
 
   if (loading) return <p>Loading...</p>;
@@ -294,19 +295,26 @@ const handleUpdateSocial = async (e) => {
           <div className="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div className="rbt-dashboard-content-wrapper">
               <div className="tutor-bg-photo bg_image bg_image--23 height-245"></div>
-              <div className="rbt-tutor-information">
+              <div className="rbt-tutor-information"
+                style={{
+                  bottom: "0px",
+                  padding: "0 18px",
+                }} >
                 <div className="rbt-tutor-information-left">
                   <div className="thumbnail rbt-avatars size-lg position-relative">
-                    <Image
-                      width={200}
-                      height={130}
-                      src={photoPreview || user.profileImage?.url || "/images/team/avatar.jpg"}
-                      alt="Student"
-                      className="rounded-circle"
-                    />
+                    {photoPreview || user.profileImage?.url ? (
+                      <Image
+                        width={200}
+                        height={115}
+                        src={photoPreview || user.profileImage?.url}
+                        alt="Student"
+                        className="rounded-circle"
+                      />
+                    ) : (
+                      <InitialAvatar name={user.fullName} />
+                    )}
 
                     <div className="rbt-edit-photo-inner">
-
                       <input
                         type="file"
                         hidden
@@ -326,14 +334,15 @@ const handleUpdateSocial = async (e) => {
                       </button>
                     </div>
                   </div>
+
                 </div>
-                <div className="rbt-tutor-information-right">
+                {/* <div className="rbt-tutor-information-right">
                   <div className="tutor-btn">
                     <Link className="rbt-btn btn-sm btn-border color-white radius-round-10" href="#">
                       Edit Cover Photo
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 

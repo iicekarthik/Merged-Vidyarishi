@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import InitialAvatar from "./Avatar/InitialAvatar";
 
 const StudentDashboardHeader = () => {
   const [studentName, setStudentName] = useState("");
@@ -40,19 +41,23 @@ const StudentDashboardHeader = () => {
   return (
     <>
       <div className="rbt-dashboard-content-wrapper">
-        <div className="tutor-bg-photo bg_image bg_image--22 height-350" />
+        <div className="tutor-bg-photo bg_image bg_image--23 height-350" />
         <div className="rbt-tutor-information">
           <div className="rbt-tutor-information-left">
             <div className="thumbnail rbt-avatars size-lg">
-              <Image
-                width={250}
-                height={130}
-                src={profileImage || "/images/team/avatar.jpg"}
-                alt="Student"
-                className="rounded-circle"
-              />
-
+              {profileImage ? (
+                <Image
+                  width={130}
+                  height={130}
+                  src={profileImage}
+                  alt="Student"
+                  className="rounded-circle"
+                />
+              ) : (
+                <InitialAvatar name={studentName} />
+              )}
             </div>
+
             <div className="tutor-content">
               <h5 className="title">{studentName}</h5>
               <ul className="rbt-meta rbt-meta-white mt--5">

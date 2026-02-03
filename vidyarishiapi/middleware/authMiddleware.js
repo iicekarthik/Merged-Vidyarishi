@@ -26,10 +26,11 @@ export const authMiddleware = (handler) => {
 
       // ✅ DO NOT fetch Admin here
       // ✅ Just regenerate access token using payload
-      const newAccess = jwt.sign(
-        { id: payload.id },
-        process.env.JWT_SECRET
-      );
+      // const newAccess = jwt.sign(
+      //   { id: payload.id },
+      //   process.env.JWT_SECRET
+      // );
+      const newAccess = generateAccessToken({ id: payload.id });
 
       res.setHeader("Set-Cookie", [
         `accessToken=${newAccess}; HttpOnly; Path=/; SameSite=Lax`,

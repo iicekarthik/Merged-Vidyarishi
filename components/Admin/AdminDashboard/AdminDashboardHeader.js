@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import CourseModal from "@/components/Admin/Courses/CourseModal";
+import InitialAvatar from "@/components/Student/Student-dashboard/Avatar/InitialAvatar";
 
 const AdminDashboardHeader = () => {
   const [admin, setAdmin] = useState(null);
@@ -37,24 +38,23 @@ const AdminDashboardHeader = () => {
   return (
     <>
       <div className="rbt-dashboard-content-wrapper">
-        <div className="tutor-bg-photo bg_image bg_image--23 height-350" />
+        <div className="tutor-bg-photo bg_image bg_image--22 height-350" />
         <div className="rbt-tutor-information">
           <div className="rbt-tutor-information-left">
             <div className="thumbnail rbt-avatars size-lg">
-              {/* <Image
-                width={250}  //300
-                height={130}   //300
-                src="/images/team/avatar-2.jpg"
-                alt="Admin"
-              /> */}
-              <Image
-                width={250}
-                height={130}
-                src={admin.profilePhoto?.url || "/images/team/avatar-2.jpg"}
-                alt="Admin"
-                className="rounded-circle"
-              />
+              {admin.profilePhoto?.url ? (
+                <Image
+                  width={130}
+                  height={130}
+                  src={admin.profilePhoto.url}
+                  alt="Admin"
+                  className="rounded-circle"
+                />
+              ) : (
+                <InitialAvatar name={admin.fullName} />
+              )}
             </div>
+
 
             <div className="tutor-content">
               <h5 className="title">{admin.fullName}</h5>

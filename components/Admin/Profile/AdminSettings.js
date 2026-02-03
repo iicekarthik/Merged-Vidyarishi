@@ -7,6 +7,7 @@ import { Link } from "react-scroll";
 import IndianStates from "@/data/indianStates.json";
 import { toast } from "react-toastify";
 import { isValidPhone, isValidEmail } from "@/vidyarishiapi/utils/validators";
+import InitialAvatar from "@/components/Student/Student-dashboard/Avatar/InitialAvatar";
 
 const Setting = () => {
   const [admin, setAdmin] = useState(null);
@@ -251,17 +252,25 @@ const Setting = () => {
           >
             {/* Profile Header */}
             <div className="rbt-dashboard-content-wrapper">
-              <div className="tutor-bg-photo bg_image bg_image--23 height-245" />
-              <div className="rbt-tutor-information">
+              <div className="tutor-bg-photo bg_image bg_image--22 height-245" />
+              <div className="rbt-tutor-information"
+                style={{
+                  bottom: "0px",
+                  padding: "0 18px",
+                }} >
                 <div className="rbt-tutor-information-left">
                   <div className="thumbnail rbt-avatars size-lg position-relative">
-                    <Image
-                      width={250}
-                      height={130}
-                      src={photoPreview || admin.profilePhoto?.url || "/images/team/avatar-2.jpg"}
-                      alt="Admin"
-                      className="rounded-circle"
-                    />
+                    {photoPreview || admin.profilePhoto?.url ? (
+                      <Image
+                        width={250}
+                        height={115}
+                        src={photoPreview || admin.profilePhoto?.url}
+                        alt="Admin"
+                        className="rounded-circle"
+                      />
+                    ) : (
+                      <InitialAvatar name={admin.fullName} />
+                    )}
 
                     <div className="rbt-edit-photo-inner">
                       <input
@@ -285,7 +294,7 @@ const Setting = () => {
                   </div>
                 </div>
 
-                <div className="rbt-tutor-information-right">
+                {/* <div className="rbt-tutor-information-right">
                   <div className="tutor-btn">
                     <Link
                       className="rbt-btn btn-sm btn-border color-white radius-round-10"
@@ -294,7 +303,7 @@ const Setting = () => {
                       Edit Cover Photo
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
